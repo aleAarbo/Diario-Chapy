@@ -1,0 +1,125 @@
+/* Reset/base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #111; background: #f7f7f7; }
+
+/* Header/footer placeholders */
+#site-header, #site-footer { width: 100%; }
+
+/* Layout container */
+.layout { max-width: 1100px; margin: 1.5rem auto; padding: 0 1rem; }
+
+/* Rows */
+.row { display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: stretch; }
+
+/* Top row: left 25%, right 75% */
+.top-row .left-box { flex: 0 0 25%; background: #e9f0ff; padding: 1rem; border-radius: 6px; }
+.top-row .right-box { flex: 1 1 75%; background: #fff; padding: 1rem; border-radius: 6px; }
+
+/* Bottom row: three equal boxes */
+.bottom-row .small-box { flex: 1 1 0; background: #fff; padding: 1rem; border-radius: 6px; text-align: center; }
+
+/* Images and video responsive */
+img, video { max-width: 100%; height: auto; display: block; border-radius: 6px; }
+
+/* Media wrapper */
+.media-wrapper { width: 100%; background: #000; padding: .25rem; border-radius: 6px; margin-top: .75rem; }
+
+/* Small utilities */
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.125rem; margin-bottom: .5rem; }
+footer { text-align: center; padding: 1rem; font-size: .9rem; color: #666; }
+
+/* Header style when partial loaded (masthead) */
+.site-header-inner { background: linear-gradient(90deg,#0b5cff,#3b82f6); color: #fff; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 1rem; border-radius: 6px; }
+.site-header-inner img { width: 56px; height: 56px; object-fit: cover; border-radius: 6px; }
+.site-header-inner h1 { font-size: 1.125rem; margin: 0; }
+
+/* Footer style */
+.site-footer-inner { text-align: center; padding: .75rem; color: #666; }
+
+/* Alt view: grid of 6 boxes */
+.alt-grid .grid-6 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.alt-grid .alt-box { background: #fff; padding: 1.25rem; border-radius: 6px; text-align: center; min-height: 100px; display:flex;align-items:center;justify-content:center; }
+
+/* Buttons */
+.btn-primary { background:#0b5cff;color:#fff;border:0;padding:.45rem .7rem;border-radius:6px;cursor:pointer; }
+.btn-ghost { background:transparent;border:1px solid #ccc;padding:.3rem .6rem;border-radius:6px;cursor:pointer; }
+
+/* Simple show/hide transition */
+#main-view, #alt-view { transition: opacity .18s ease, transform .18s ease; }
+#main-view[aria-hidden="true"], #alt-view[aria-hidden="true"] { opacity: 0; transform: translateY(6px); pointer-events: none; }
+
+/* Tipografía: titulares serif */
+.site-header-inner h1, .alt-header h2, .box h2, .alt-box, .headline { font-family: "Merriweather", Georgia, serif; }
+
+/* Masthead adjustments */
+.site-header-inner {
+	padding: 1.25rem 1.5rem;
+	gap: 1rem;
+	align-items: center;
+}
+.site-header-inner .tagline { font-size: .95rem; opacity: .95; }
+
+/* Kicker / headline / lead utilities */
+.kicker { display:block; font-size:.75rem; color:#0b5cff; font-weight:600; margin-bottom:.25rem; text-transform:uppercase; letter-spacing:.04em; }
+.headline { font-family: "Merriweather", serif; font-size:1.6rem; line-height:1.05; margin: .25rem 0 .5rem; font-weight:900; }
+.lead { color:#444; font-size:1rem; margin-bottom:.75rem; }
+
+/* Top story */
+.top-story-thumb {
+	float: right;
+	width: 35%;
+	max-width: 360px;
+	margin: 0 0 1rem 1rem; /* espacio entre imagen y texto */
+	border-radius: 6px;
+	object-fit: cover;
+}
+.top-story-thumb { width:100%; height:260px; object-fit:cover; border-radius:6px; margin: .65rem 0; }
+.top-story .content { max-width: 70ch; color:#222; }
+
+/* Article card for lists */
+.article-card { display:flex; gap:.8rem; align-items:flex-start; padding:.6rem 0; border-bottom:1px solid #f0f0f0; }
+.article-card:last-child { border-bottom: none; }
+.article-card .meta { font-size:.8rem; color:#999; margin-bottom:.25rem; }
+
+/* Alt grid adjustments: make cards look uniform */
+.alt-box, .small-box, .box { min-height:120px; display:flex; flex-direction:column; justify-content:center; }
+
+/* Improve newspaper-like measure for article text */
+.layout { max-width: 1100px; }
+.right-box .content { max-width: 70ch; }
+
+/* Make containers visibly clickable */
+.js-article { cursor: pointer; transition: transform .12s ease, box-shadow .12s ease; }
+.js-article:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(16,24,40,0.08); }
+
+/* Excerpt styling */
+.excerpt { color: #555; font-size:.95rem; margin-top:.5rem; }
+
+/* Article view */
+#article-view { background: #fff; padding: 1rem; border-radius: 8px; }
+#article-view[aria-hidden="false"] { display: block; }
+#article-content { font-size: 1rem; color:#222; line-height:1.6; }
+
+/* If you want modal-like overlay uncomment these (optional)
+#article-overlay {
+	position: fixed; inset: 0; background: rgba(0,0,0,0.45); display:flex; align-items:flex-start; justify-content:center; padding:2rem; z-index:40;
+}
+*/
+
+/* Ensure good mobile reading width */
+@media (max-width: 768px) {
+	.site-header-inner h1 { font-size:1.1rem; }
+	.headline { font-size:1.25rem; }
+	.top-story-thumb {
+		float: none;
+		width: 100%;
+		max-width: none;
+		margin: 0 0 .75rem 0;
+	}
+	.top-story-thumb { height:160px; }
+	.alt-grid .grid-6 { grid-template-columns: 1fr; }
+	.top-row { flex-direction: column; }
+	#article-content { padding: 0; }
+	.layout { padding: 0 .75rem; }
+}

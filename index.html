@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Página ejemplo — ChapyTwo</title>
+	<!-- añadir Bulma CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+	<!-- añadir fuentes para estilo 'newspaper' -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-header-img="assets/header.jpg" data-footer-note="© 2025 — ChapyTwo">
+	<!-- header se cargará dinámicamente -->
+	<div id="site-header" aria-hidden="true"></div>
+
+	<main>
+		<!-- Vista principal -->
+		<section id="main-view" class="layout">
+			<!-- fila superior: izquierda 25% y derecha 75% -->
+			<section class="row top-row columns" role="region" aria-label="Principal">
+				<aside class="box left-box column is-one-quarter js-article" 
+					data-article-id="a-left" 
+					data-article-title="Análisis: Política local" 
+					data-article-excerpt="Breve reseña de la noticia que explica el tema en pocas líneas." 
+					data-article-full="Aquí va el texto completo de la noticia izquierda. Puedes poner varios párrafos HTML.">
+					<h2>Izquierda (25%)</h2>
+					<p class="excerpt">Fechas importantes:
+    • 1 de septiembre: Día Mundial de la Dactiloscopía y Día Mundial del Pez Limpiador. 
+    • 5 de septiembre: Día Internacional de la Mujer Indígena y Día Internacional de la Beneficencia. 
+    • 8 de septiembre: Día Internacional del Periodista y Día Internacional de la Alfabetización. 
+    • 10 de septiembre: Día Mundial para la Prevención del Suicidio. 
+    • 13 de septiembre: Día Mundial del Chocolate y Día Mundial de la Sepsis. 
+    • 15 de septiembre: Día Internacional de la Democracia y Día Mundial del Linfoma. 
+    • 16 de septiembre: Día Internacional para la Preservación de la Capa de Ozono. 
+    • 21 de septiembre: Día Internacional de la Paz. 
+    • 23 de septiembre: Día Internacional de las Lenguas de Señas y Día Mundial del Síndrome de las Piernas Inquietas. 
+    • 28 de septiembre: Día Mundial del Corazón y Día Mundial de la Rabia. </p>
+				</aside>
+
+				<article class="box right-box column">
+					<!-- Imagen destacada movida arriba para permitir que el texto la envuelva -->
+					<img id="hero-img" class="top-story-thumb" src="assets/placeholder.jpg" alt="Imagen destacada" />
+					<!-- Top story: kicker, headline, lead -->
+					<div style="display:flex;justify-content:space-between;align-items:center;">
+						<div>
+							<span class="kicker">Política</span>
+							<h1 class="headline">Titular principal: ejemplo de noticia con estilo periódico</h1>
+							<p class="lead">El 25 del mes pasado festejamos los dos siglos de vida independiente de nuestro país; eso es bueno pues mirar hacia el ayer permite consolidarnos en el presente para poder proyectarnos hacia el futuro.
+En realidad dos siglos es muy poco en cuanto a la historia y al tiempo, pero también puede ser mucho para una sociedad joven como la nuestra. Y en esa idea de “mucho” es que debemos anclarnos para mirar el pasado como lo que fue y con los aciertos y errores que tuvo.
+Nacimos a la vida independiente un poco de prepo o cuasi artificialmente de la mano de la potencia de turno de ese entonces: Inglaterra; la cual aspiraba a crear un pequeño estado “tapón” que evitara conflictos entre el Imperio del Brasil y las Provincias Unidas. Se favorecería así el comercio internacional de las potencias europeas en general y de Inglaterra en particular.
+Desde la época colonial Portugal primero y Brasil más tarde aspiraron a alcanzar el limite natural del río Uruguay a fin no solo de crecer territorialmente sino expandir su comercio por el cono sur. Durante un tiempo y apoyados por el antifederalismo de los gobiernos porteños lograron su objetivo y la Banda Oriental (hoy Uruguay) se transformó en la Provincia Cisplatina integrándose al Imperio de Brasil (heredero de Portugal). Una vez extinguido el Federalismo y exiliado Artigas en el Paraguay Buenos Aires y su kakistocracia dirigente urdieron la recuperación de la provincia y la expulsión de los brasileños. 
+La guerra se desató nuevamente y en Ituzaingó el imperio fue derrotado. Para ese entonces los “orientales argentinos” habían declarado en la Florida las leyes del 25 de agosto; en ellas se daban un símbolo (pabellón), se declaraban independientes y a su vez se declaraban unidos a las provincias argentinas. 
+Para entender este entuerto entre las dos ultimas leyes y como “no se puede chiflar y comer gofio” tenemos que entender que hasta 1851 en la mentalidad de los orientales existía su identificación con lo que hoy es Argentina. Nunca quisimos ser un país independiente sino una provincia más del vecino país; la idea del federalismo artiguista había echado raíces en la mentalidad colectiva. 
+Fuimos una zona fronteriza y conflictiva; una especie de “marca” como en la edad media y esa característica fue la que a la larga nos condenó a separarnos de nuestros hermanos creando un país primero y luego intentando crear la idea de nación; y los mitos se fueron construyendo para dar cohesión social
+Esa es la verdad clara y quizás nos cueste entender que el 4 de octubre es cuando realmente nació nuestro estado pues fue la fecha en que se canjearon (en Bs. As.) entre Brasil y las Provincias Unidas las copias de la ominosa y degradante Convención Preliminar de Paz.</p>
+						</div>
+
+						<!-- añadir clases Bulma a botón manteniendo id -->
+						<button id="open-alt" class="btn-primary button is-primary" aria-controls="alt-view">Ver 6 cajas</button>
+					</div>
+
+					<!-- contenido -->
+					<div class="content">
+						<p>Artículo de ejemplo: aquí iría el primer párrafo de la noticia, con medida de lectura adecuada (ch).</p>
+					</div>
+
+					<div class="media-wrapper">
+						<video id="sample-video" controls preload="metadata" poster="assets/placeholder.jpg">
+							<source src="assets/sample.mp4" type="video/mp4" />
+							Tu navegador no soporta la etiqueta video.
+						</video>
+					</div>
+				</article>
+			</section>
+
+			<!-- fila inferior: 3 cajas iguales -->
+			<section class="row bottom-row columns" role="region" aria-label="Sección secundaria">
+				<div class="box small-box column js-article" data-article-id="c1" data-article-title="Caja 1 — Cultura" data-article-excerpt="Resumen corto de la caja 1." data-article-full="Texto completo de la noticia de Caja 1."> 
+					<h3>Caja 1</h3>
+					<p class="excerpt">Resumen corto de la caja 1.</p>
+				</div>
+				<div class="box small-box column js-article" data-article-id="c2" data-article-title="Caja 2 — Economía" data-article-excerpt="Resumen corto de la caja 2." data-article-full="Texto completo de la noticia de Caja 2.">
+					<h3>Caja 2</h3>
+					<p class="excerpt">Resumen corto de la caja 2.</p>
+				</div>
+				<div class="box small-box column js-article" data-article-id="c3" data-article-title="Caja 3 — Sociedad" data-article-excerpt="Resumen corto de la caja 3." data-article-full="Texto completo de la noticia de Caja 3.">
+					<h3>Caja 3</h3>
+					<p class="excerpt">Resumen corto de la caja 3.</p>
+				</div>
+				</section>
+		</section>
+
+		<!-- Vista alternativa (inicialmente oculta) -->
+		<section id="alt-view" class="layout alt-grid" aria-hidden="true" style="display:none;">
+			<div class="alt-header" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+				<h2>Vista secundaria — 6 cajas</h2>
+				<!-- botón volver con Bulma -->
+				<button id="back-main" class="btn-ghost button is-light" aria-controls="main-view">Volver</button>
+			</div>
+
+			<!-- usar Bulma grid para 6 cajas -->
+			<div class="grid-6 columns is-multiline">
+				<div class="alt-box column is-one-third js-article" data-article-id="a1" data-article-title="Alt 1 — Internacional" data-article-excerpt="Breve reseña Alt 1." data-article-full="Texto completo Alt 1.">Alt 1<p class="excerpt">Breve reseña Alt 1.</p></div>
+				<div class="alt-box column is-one-third js-article" data-article-id="a2" data-article-title="Alt 2 — Ciencia" data-article-excerpt="Breve reseña Alt 2." data-article-full="Texto completo Alt 2.">Alt 2<p class="excerpt">Breve reseña Alt 2.</p></div>
+				<div class="alt-box column is-one-third js-article" data-article-id="a3" data-article-title="Alt 3 — Deportes" data-article-excerpt="Breve reseña Alt 3." data-article-full="Texto completo Alt 3.">Alt 3<p class="excerpt">Breve reseña Alt 3.</p></div>
+				<div class="alt-box column is-one-third js-article" data-article-id="a4" data-article-title="Alt 4 — Cultura" data-article-excerpt="Breve reseña Alt 4." data-article-full="Texto completo Alt 4.">Alt 4<p class="excerpt">Breve reseña Alt 4.</p></div>
+				<div class="alt-box column is-one-third js-article" data-article-id="a5" data-article-title="Alt 5 — Tecnología" data-article-excerpt="Breve reseña Alt 5." data-article-full="Texto completo Alt 5.">Alt 5<p class="excerpt">Breve reseña Alt 5.</p></div>
+				<div class="alt-box column is-one-third js-article" data-article-id="a6" data-article-title="Alt 6 — Opinión" data-article-excerpt="Breve reseña Alt 6." data-article-full="Texto completo Alt 6.">Alt 6<p class="excerpt">Breve reseña Alt 6.</p></div>
+			</div>
+		</section>
+
+		<!-- Article view: muestra noticia completa sin recargar header/footer -->
+		<section id="article-view" class="layout" aria-hidden="true" style="display:none;">
+			<div class="article-controls" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+				<div>
+					<span id="article-kicker" class="kicker" style="display:none;"></span>
+					<h2 id="article-title" class="headline"></h2>
+				</div>
+				<div>
+					<button id="close-article" class="button is-light">Cerrar</button>
+				</div>
+			</div>
+			<article id="article-content" class="top-story"></article>
+		</section>
+	</main>
+
+	<!-- footer se cargará dinámicamente -->
+	<div id="site-footer" aria-hidden="true"></div>
+
+	<script src="js/main.js" defer></script>
+</body>
+</html>
