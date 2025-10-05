@@ -1,158 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Periódico Digital - Ysapy</title>
-	<!-- añadir Bulma CDN -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-	<!-- añadir fuentes para estilo 'newspaper' -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body data-footer-note="2025 — Liceo de Chapicuy">
-	<!-- header se cargará dinámicamente -->
-	<div id="site-header" aria-hidden="true"></div>
+<body>
+    <!-- Header incluido desde archivo externo -->
+    <div id="header-container"></div>
 
-	<!-- Títulos arriba del navbar -->
-	<div class="page-titles">
-		<h1>Periódico Digital - Ysapy</h1>
-		<p class="subtitle">Liceo de Chapicuy</p>
-	</div>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-	<!-- Segundo header con navegación -->
-	<nav class="secondary-header">
-		<div class="nav-container">
-			<div class="nav-menu" id="nav-menu">
-				<!-- Los botones se generarán automáticamente desde JavaScript -->
-			</div>
-			<div class="nav-toggle" id="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</div>
-	</nav>
+    <!-- Sección principal con article y aside -->
+    <section class="main-section">
+        <article class="main-article">
+            <!-- Carrusel de imágenes -->
+            <div class="carousel">
+                <div class="carousel-slides">
+                    <div class="slide active">
+                        <img src="imagen1.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="slide">
+                        <img src="imagen2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="slide">
+                        <img src="imagen3.jpg" alt="Imagen 3">
+                    </div>
+                </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                </div>
+            </div>
+        </article>
+        
+        <aside class="main-aside">
+            <h2>Información destacada</h2>
+            <p>Contenido adicional o información relevante que quieras mostrar en el aside.</p>
+        </aside>
+    </section>
 
-	<main>
-		<!-- Vista principal -->
-		<section id="main-view" class="layout">
-			<!-- fila superior: izquierda 25% y derecha 75% -->
-			<section class="row top-row columns" role="region" aria-label="Principal">
-				<aside class="box left-box column is-one-quarter js-article" 
-					data-article-id="a-left" 
-					data-article-title="Efemérides de Septiembre" 
-					data-article-excerpt="Fechas importantes del mes de septiembre" 
-					data-article-full="<h3>Fechas importantes de septiembre</h3>
-						<ul>
-							<li><strong>1 de septiembre:</strong> Día Mundial de la Dactiloscopía y Día Mundial del Pez Limpiador.</li>
-							<li><strong>5 de septiembre:</strong> Día Internacional de la Mujer Indígena y Día Internacional de la Beneficencia.</li>
-							<li><strong>8 de septiembre:</strong> Día Internacional del Periodista y Día Internacional de la Alfabetización.</li>
-							<li><strong>10 de septiembre:</strong> Día Mundial para la Prevención del Suicidio.</li>
-							<li><strong>13 de septiembre:</strong> Día Mundial del Chocolate y Día Mundial de la Sepsis.</li>
-							<li><strong>15 de septiembre:</strong> Día Internacional de la Democracia y Día Mundial del Linfoma.</li>
-							<li><strong>16 de septiembre:</strong> Día Internacional para la Preservación de la Capa de Ozono.</li>
-							<li><strong>21 de septiembre:</strong> Día Internacional de la Paz.</li>
-							<li><strong>23 de septiembre:</strong> Día Internacional de las Lenguas de Señas y Día Mundial del Síndrome de las Piernas Inquietas.</li>
-							<li><strong>28 de septiembre:</strong> Día Mundial del Corazón y Día Mundial de la Rabia.</li>
-						</ul>
-						<footer><p><strong>Autor:</strong> Prof. Manuel Albisu</p></footer>">
-					<h2>Efemérides</h2>
-					<p class="excerpt">Fechas importantes de septiembre</p>
-				</aside>
+    <!-- Sección de artículos dinámicos -->
+    <section class="articles-section">
+        <article class="dynamic-article" data-id="1">
+            <div class="article-image">
+                <img src="articulo1.jpg" alt="Artículo 1">
+            </div>
+            <div class="article-content">
+                <h3>Título del Artículo 1</h3>
+                <p>Resumen breve del contenido del primer artículo...</p>
+                <button class="read-more">Leer más</button>
+            </div>
+        </article>
+        
+        <article class="dynamic-article" data-id="2">
+            <div class="article-image">
+                <img src="articulo2.jpg" alt="Artículo 2">
+            </div>
+            <div class="article-content">
+                <h3>Título del Artículo 2</h3>
+                <p>Resumen breve del contenido del segundo artículo...</p>
+                <button class="read-more">Leer más</button>
+            </div>
+        </article>
+        
+        <article class="dynamic-article" data-id="3">
+            <div class="article-image">
+                <img src="articulo3.jpg" alt="Artículo 3">
+            </div>
+            <div class="article-content">
+                <h3>Título del Artículo 3</h3>
+                <p>Resumen breve del contenido del tercer artículo...</p>
+                <button class="read-more">Leer más</button>
+            </div>
+        </article>
+        
+        <article class="dynamic-article" data-id="4">
+            <div class="article-image">
+                <img src="articulo4.jpg" alt="Artículo 4">
+            </div>
+            <div class="article-content">
+                <h3>Título del Artículo 4</h3>
+                <p>Resumen breve del contenido del cuarto artículo...</p>
+                <button class="read-more">Leer más</button>
+            </div>
+        </article>
+    </section>
 
-				<article class="box right-box column">
-					<!-- Imagen destacada -->
-					<img id="hero-img" class="top-story-thumb" src="img/declaratoria_independencia_1825.jpg" alt="Sala de Representantes de la Provincia Oriental 25/08/1825, Florida" />
-					
-					<!-- Top story: kicker, headline, lead -->
-					<div style="display:flex;justify-content:space-between;align-items:flex-start;">
-						<div style="flex:1;">
-							<span class="kicker">Bicentenario</span>
-							<h1 class="headline">¡¡ BICENTENARIO !! de la ¿Independencia ?</h1>
-							<h5 class="byline">Por Prof. Manuel Albisu</h5>
-							<p class="lead">El 25 del mes pasado festejamos los dos siglos de vida independiente de nuestro país; eso es bueno pues mirar hacia el ayer permite consolidarnos en el presente para poder proyectarnos hacia el futuro.</p>
-							
-							<div class="content">
-								<p>En realidad dos siglos es muy poco en cuanto a la historia y al tiempo, pero también puede ser mucho para una sociedad joven como la nuestra. Y en esa idea de "mucho" es que debemos anclarnos para mirar el pasado como lo que fue y con los aciertos y errores que tuvo.</p>
+    <!-- Footer incluido desde archivo externo -->
+    <div id="footer-container"></div>
 
-								<p>Nacimos a la vida independiente un poco de prepo o cuasi artificialmente de la mano de la potencia de turno de ese entonces: Inglaterra; la cual aspiraba a crear un pequeño estado "tapón" que evitara conflictos entre el Imperio del Brasil y las Provincias Unidas. Se favorecería así el comercio internacional de las potencias europeas en general y de Inglaterra en particular.</p>
+    <!-- Modal para mostrar artículos completos -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
 
-								<p>Desde la época colonial Portugal primero y Brasil más tarde aspiraron a alcanzar el límite natural del río Uruguay a fin no solo de crecer territorialmente sino expandir su comercio por el cono sur. Durante un tiempo y apoyados por el antifederalismo de los gobiernos porteños lograron su objetivo y la Banda Oriental (hoy Uruguay) se transformó en la Provincia Cisplatina integrándose al Imperio de Brasil (heredero de Portugal). Una vez extinguido el Federalismo y exiliado Artigas en el Paraguay Buenos Aires y su kakistocracia dirigente urdieron la recuperación de la provincia y la expulsión de los brasileños.</p>
-
-								<p>La guerra se desató nuevamente y en Ituzaingó el imperio fue derrotado. Para ese entonces los "orientales argentinos" habían declarado en la Florida las leyes del 25 de agosto; en ellas se daban un símbolo (pabellón), se declaraban independientes y a su vez se declaraban unidos a las provincias argentinas.</p>
-
-								<p>Para entender este entuerto entre las dos últimas leyes y como "no se puede chiflar y comer gofio" tenemos que entender que hasta 1851 en la mentalidad de los orientales existía su identificación con lo que hoy es Argentina. Nunca quisimos ser un país independiente sino una provincia más del vecino país; la idea del federalismo artiguista había echado raíces en la mentalidad colectiva.</p>
-
-								<p>Fuimos una zona fronteriza y conflictiva; una especie de "marca" como en la edad media y esa característica fue la que a la larga nos condenó a separarnos de nuestros hermanos creando un país primero y luego intentando crear la idea de nación; y los mitos se fueron construyendo para dar cohesión social.</p>
-
-								<p>Esa es la verdad clara y quizás nos cueste entender que el 4 de octubre es cuando realmente nació nuestro estado pues fue la fecha en que se canjearon (en Bs. As.) entre Brasil y las Provincias Unidas las copias de la ominosa y degradante Convención Preliminar de Paz.</p>
-							</div>
-						</div>
-					</div>
-				</article>
-			</section>
-
-			<!-- fila inferior: 3 cajas iguales -->
-			<section class="row bottom-row columns" role="region" aria-label="Secciones">
-				<div class="box small-box column js-article" data-article-id="c1" data-article-title="Liceo de Chapicuy - Semana del Bicentenario" data-article-excerpt="Actividades del Liceo de Chapicuy durante la Semana del Bicentenario." data-article-full="<h3>Liceo de Chapicuy - Semana del Bicentenario</h3>
-					<p><strong>Chapicuy, 22 de agosto de 2025</strong> – El Liceo de Chapicuy comenzó hoy la Semana del Bicentenario con un desfile temático y exposiciones educativas. Los estudiantes se presentaron caracterizados según géneros musicales como candombe, murga, rock y música tropical, acompañados de explicaciones sobre su origen cultural e histórico en Uruguay.</p>
-					<p>La jornada incluyó estaciones educativas sobre historia, juegos tradicionales, participación social de la mujer y proyectos de investigación, con participación activa de estudiantes y familias. También se realizó un Kahoot sobre la época de 1825, promoviendo aprendizaje interactivo.</p>
-					<p>Las actividades continuarán hasta el 28 de agosto, culminando con talleres, actos conmemorativos y encuentros interinstitucionales que reforzarán la identidad cultural y la participación estudiantil.</p>
-					<footer><p><strong>Autor:</strong> Prof. Luis Carbonell</p></footer>">
-					<h3>Semana del Bicentenario</h3>
-					<p class="excerpt">Actividades en el Liceo de Chapicuy</p>
-				</div>
-				<div class="box small-box column js-article" data-article-id="c2" data-article-title="Chapicuy en Quebracho" data-article-excerpt="Participación de estudiantes en jornada del Bicentenario en Quebracho." data-article-full="<h3>Chapicuy dijo presente en la jornada del Bicentenario en Quebracho</h3>
-					<p>Estudiantes de 2° y 3° año de Educación Media Superior del Liceo Rural de Chapicuy participaron activamente en la jornada conmemorativa del Bicentenario de la Declaratoria de la Independencia, realizada en la localidad de Quebracho.</p>
-					<p>En conjunto con los estudiantes de 2° año de Educación Media Superior de Quebracho, presentaron una exposición sobre el Candombe, resaltando su valor cultural y su importancia como expresión identitaria del país.</p>
-					<p>La participación de los estudiantes chapicuenses fue recibida con entusiasmo por el público y destacó por su compromiso, creatividad y espíritu colaborativo, contribuyendo al clima festivo y de celebración de esta importante fecha patria.</p>
-					<footer><p><strong>Autor:</strong> Prof. Noel Imer</p></footer>">
-					<h3>En Quebracho</h3>
-					<p class="excerpt">Participación en jornada del Bicentenario</p>
-				</div>
-				<div class="box small-box column js-article" data-article-id="c3" data-article-title="Noticias Educativas" data-article-excerpt="Últimas novedades del ámbito educativo." data-article-full="<h3>Noticias Educativas</h3>
-					<p>Más contenido educativo y noticias del Liceo de Chapicuy próximamente.</p>
-					<footer><p><strong>Autor:</strong> Equipo Editorial</p></footer>">
-					<h3>Más Noticias</h3>
-					<p class="excerpt">Próximamente más contenido</p>
-				</div>
-			</section>
-		</section>
-
-		<!-- Vista alternativa (inicialmente oculta) -->
-		<section id="alt-view" class="layout alt-grid" aria-hidden="true" style="display:none;">
-			<div class="alt-header" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
-				<h2>Más Noticias del Liceo</h2>
-				<button id="back-main" class="btn-ghost button is-light" aria-controls="main-view">Volver al Inicio</button>
-			</div>
-
-			<!-- Grid de cajas dinámicas -->
-			<div class="grid-6 columns is-multiline" id="dynamic-grid">
-				<!-- Las cajas se generarán dinámicamente desde JavaScript -->
-			</div>
-		</section>
-
-		<!-- Article view: muestra noticia completa sin recargar header/footer -->
-		<section id="article-view" class="layout" aria-hidden="true" style="display:none;">
-			<div class="article-controls" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
-				<div>
-					<span id="article-kicker" class="kicker" style="display:none;"></span>
-					<h2 id="article-title" class="headline"></h2>
-				</div>
-				<div>
-					<button id="close-article" class="button is-light">Cerrar</button>
-				</div>
-			</div>
-			<article id="article-content" class="top-story"></article>
-		</section>
-	</main>
-
-	<!-- footer se cargará dinámicamente -->
-	<div id="site-footer" aria-hidden="true"></div>
-
-	<script src="js/main.js" defer></script>
+    <!-- Scripts -->
+    <script src="header.js"></script>
+    <script src="carousel.js"></script>
+    <script src="articles.js"></script>
+    <script src="footer.js"></script>
 </body>
 </html>
