@@ -312,6 +312,12 @@ footer {
     margin: 0 auto;
 }
 
+.footer-content img {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 .footer-links {
     margin-top: 15px;
     display: flex;
