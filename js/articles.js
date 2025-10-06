@@ -11,11 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Bicentenario de Uruguay: La compleja forja de una nación",
             image: "/img/declaratorioa de la independencia.png",
             content: `<h4>A 200 años de la Declaratoria de la Florida, un repaso por los intrincados orígenes de un país que nació más por intereses geopolíticos foráneos que por una voluntad unánime de independencia.</h4>
-            <p>Con los ecos de los festejos del bicentenario aún en el aire, <strong>Uruguay cerró un capítulo de celebración y abrió uno de reflexión</strong>. Dos siglos de vida independiente son, sin duda, un hito para una sociedad joven, un punto de inflexión para consolidar el presente y proyectar el futuro. Sin embargo, la mirada hacia el ayer nos revela una historia de gestación compleja, donde los hilos del destino nacional no siempre se tejieron desde dentro, sino que fueron manipulados por las potencias de la época.</p>
+            
+            <br>
+
+            <p>Con los ecos de los festejos del bicentenario aún en el aire, <i>Uruguay cerró un capítulo de celebración y abrió uno de reflexión</i>. Dos siglos de vida independiente son, sin duda, un hito para una sociedad joven, un punto de inflexión para consolidar el presente y proyectar el futuro. Sin embargo, la mirada hacia el ayer nos revela una historia de gestación compleja, donde los hilos del destino nacional no siempre se tejieron desde dentro, sino que fueron manipulados por las potencias de la época.</p>
 
 <br>
 
-<p>La efeméride que celebramos cada 25 de agosto conmemora la Declaratoria de la Independencia por parte de los representantes de la Florida en 1825. Pero, <strong>¿fue ese el verdadero momento fundacional del Estado uruguayo?</strong> Un análisis desapasionado de los hechos sugiere que la respuesta es más enrevesada que un simple "sí".</p>
+<p>La efeméride que celebramos cada 25 de agosto conmemora la Declaratoria de la Independencia por parte de los representantes de la Florida en 1825. Pero, <i>¿fue ese el verdadero momento fundacional del Estado uruguayo?</i> Un análisis desapasionado de los hechos sugiere que la respuesta es más enrevesada que un simple "sí".</p>
 
 <br>
 
@@ -23,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <br><br>
 
-<p>Contrario al relato romántico de una lucha unánime por la libertad, <strong>el nacimiento de Uruguay tuvo un marcado carácter artificial</strong>. Como bien señalan los historiadores, surgimos "un poco de prepo" de la mano del interés estratégico de Gran Bretaña. La potencia marítima de entonces no veía con buenos ojos el conflicto constante entre el Imperio del Brasil y las Provincias Unidas del Río de la Plata, una pugna que perturbaba el libre comercio, vital para los intereses europeos.</p>
+<p>Contrario al relato romántico de una lucha unánime por la libertad, <i>el nacimiento de Uruguay tuvo un marcado carácter artificial</i>. Como bien señalan los historiadores, surgimos "un poco de prepo" de la mano del interés estratégico de Gran Bretaña. La potencia marítima de entonces no veía con buenos ojos el conflicto constante entre el Imperio del Brasil y las Provincias Unidas del Río de la Plata, una pugna que perturbaba el libre comercio, vital para los intereses europeos.</p>
 
 <br>
 
-<p>La solución fue la creación de un <strong>"Estado tapón"</strong>, una entidad política independiente que pusiera fin a las ambiciones territoriales de ambos gigantes. Así, la Banda Oriental, que durante un tiempo había sido incorporada forzosamente al Imperio del Brasil como la Provincia Cisplatina, se convirtió en la moneda de cambio para la paz.</p>
+<p>La solución fue la creación de un <i>"Estado tapón"</i>, una entidad política independiente que pusiera fin a las ambiciones territoriales de ambos gigantes. Así, la Banda Oriental, que durante un tiempo había sido incorporada forzosamente al Imperio del Brasil como la Provincia Cisplatina, se convirtió en la moneda de cambio para la paz.</p>
 
 <br>
 
@@ -39,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <br>
 
-<p>"Para entender este entuerto hay que recordar que, hasta bien entrado el siglo XIX, la mentalidad del oriental promedio no anhelaba una patria separada", explica un historiador consultado para este artículo. "La idea federal de Artigas, de ser una provincia más dentro de una confederación argentina, había calado hondo. <strong>Nunca quisimos ser un país independiente, sino una parte de nuestro vecino</strong>".</p>
+<p>"Para entender este entuerto hay que recordar que, hasta bien entrado el siglo XIX, la mentalidad del oriental promedio no anhelaba una patria separada", explica un historiador consultado para este artículo. "La idea federal de Artigas, de ser una provincia más dentro de una confederación argentina, había calado hondo. <i>Nunca quisimos ser un país independiente, sino una parte de nuestro vecino</i>".</p>
 
 <br>
 
@@ -47,11 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <br><br>
 
-<p>Si el 25 de agosto fue el grito de autonomía, <strong>el parto real del Estado uruguayo como entidad jurídicamente reconocida ocurrió el 4 de octubre de 1828</strong>. Ese día, en Buenos Aires, Brasil y las Provincias Unidas canjearon las copias de la Convención Preliminar de Paz, un tratado que, aunque "ominoso y degradante" por ser pactado sin la presencia de delegados orientales, dio existencia legal a la República Oriental del Uruguay.</p>
+<p>Si el 25 de agosto fue el grito de autonomía, <i>el parto real del Estado uruguayo como entidad jurídicamente reconocida ocurrió el 4 de octubre de 1828</i>. Ese día, en Buenos Aires, Brasil y las Provincias Unidas canjearon las copias de la Convención Preliminar de Paz, un tratado que, aunque "ominoso y degradante" por ser pactado sin la presencia de delegados orientales, dio existencia legal a la República Oriental del Uruguay.</p>
 
 <br>
 
-<p>Fuimos, en esencia, una <strong>"marca" fronteriza</strong>, un territorio de contención como los que existían en la Edad Media. Esa condición geopolítica fue la que, a la larga, nos condenó a la separación de nuestros hermanos. A partir de entonces, comenzó la titánica tarea de construir no solo un país, sino una idea de nación, forjando mitos y símbolos para dar cohesión a una sociedad que no había buscado deliberadamente su propio camino.</p>
+<p>Fuimos, en esencia, una <i>"marca" fronteriza</i>, un territorio de contención como los que existían en la Edad Media. Esa condición geopolítica fue la que, a la larga, nos condenó a la separación de nuestros hermanos. A partir de entonces, comenzó la titánica tarea de construir no solo un país, sino una idea de nación, forjando mitos y símbolos para dar cohesión a una sociedad que no había buscado deliberadamente su propio camino.</p>
 
 <br>
 
@@ -59,11 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <br><br>
 
-<p>Celebrar el bicentenario es, por lo tanto, mucho más que conmemorar una fecha. <strong>Es reconocer nuestra intrincada y poco convencional cuna</strong>. Es entender que la nacionalidad no es un destino manifiesto, sino un proceso histórico lleno de aciertos, errores, imposiciones externas y voluntades internas que se entrelazan.</p>
+<p>Celebrar el bicentenario es, por lo tanto, mucho más que conmemorar una fecha. <i>Es reconocer nuestra intrincada y poco convencional cuna</i>. Es entender que la nacionalidad no es un destino manifiesto, sino un proceso histórico lleno de aciertos, errores, imposiciones externas y voluntades internas que se entrelazan.</p>
 
 <br>
 
-<p>La verdad histórica, a veces incómoda, es la que nos permite afianzarnos con mayor solidez. Al cumplir 200 años, <strong>Uruguay no solo mira con orgullo su trayectoria, sino que también se reconcilia con la complejidad de sus orígenes</strong>, asumiendo que la fortaleza de una nación joven reside en su capacidad para entender su pasado con claridad y valentía.</p>
+<p>La verdad histórica, a veces incómoda, es la que nos permite afianzarnos con mayor solidez. Al cumplir 200 años, <i>Uruguay no solo mira con orgullo su trayectoria, sino que también se reconcilia con la complejidad de sus orígenes</i>, asumiendo que la fortaleza de una nación joven reside en su capacidad para entender su pasado con claridad y valentía.</p>
 
 <br>
 
