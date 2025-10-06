@@ -102,9 +102,47 @@ Otro nombre a destacar es el de Petrona Rosende de Sierra, quien nació en Monte
 <p>Por Prof. Sandra Baratta</p>`
         },
         3: {
-            title: "Título Completo del Artículo 3",
-            image: "articulo3.jpg",
-            content: "<p>Contenido completo del tercer artículo. Aquí puedes incluir todo el texto, imágenes y otros elementos que quieras mostrar cuando el usuario haga clic en 'Leer más'.</p><p>Puedes agregar tantos párrafos como necesites para mostrar toda la información.</p>"
+            title: "Sala de la Florida",
+            image: "/img/asamblea de la florida.png",
+            content: `<p>Este año en la Celebración del Bicentenario y  la Declaratoria de la Independencia, es significativo hacer referencia a la fuente histórica del cuadro pintado por Eduardo Amézaga entre 1943 y 1947; que se llama la “Asamblea de la Florida”. Esta obra artística representa la sesión de la Primera Legislatura de la Provincia Oriental, celebrada en Florida el 25 de agosto de 1825 por los quince delegados de los pueblos presentes en la sesión. 
+            <br>
+ Amézaga no representó una escena bélica ni batallas importantes; pero si plasma lo que esos procesos previos habían conseguido.
+ <br>
+ El artista refleja a los representantes en una escena de absoluta ciudadanía con hombres de pensamientos que reflejan el primer acto de democracia.
+ <br>
+ En la Sala se declaran las tres Leyes Fundamentales:
+ </p>
+
+<br>
+
+<strong> Ley de Independencia </strong>
+
+<br><br>
+
+<p>Declara irritos, nulos , disueltos y de ningún valor para siempre a todos los actos de incorporación, reconocimiento, aclamaciones y juramentos arrancados a los pueblos de la Provincia Oriental por la violencia de la fuerza , unida a la perfidia de los intrusos poderes de Portugal y Brasil. La Provincia Oriental declara la plenitud de los derechos … se declara de hecho y de derecho libre e independiente del rey de Portugal , del Emperador del Brasil y de cualquier otro del universo y con amplio y pleno poder para darse las formas de gobierno que en uso y ejercicio de su soberanía estime conveniente .</p>
+
+<br>
+
+<strong> Ley de Unión </strong>
+
+<p>La Honorable Sala de Representantes.... declara: que su voto general, constante, solemne y decidido es , y debe ser, por la unidad con las demás Provincias Argentinas a que siempre perteneció por los vínculos más sagrados que el mundo conoce. Por tanto ha sancionado y decreta por ley fundamental la siguiente :
+Queda la Prov. Oriental del Río de la Plata unida a las demás de este nombre en el territorio de Sud América, por ser la libre y espontanea voluntad de los pueblos que la componen.</p>
+
+<br>
+
+<strong>Ley de Pabellón </strong>
+
+<br><br>
+
+<p>Se declara por tal el que tiene admitido... por ahora y hasta tanto que incorporados los diputados de esta Provincia a la soberanía nacional , enarbole el reconocido Pabellón de tres franjas horizontales azul, blanca y punzón, por el de las Provincias Unidas del Río de la Plata , a que pertenece.</p>
+
+<br><br>
+
+<p>Por ello, los estudiantes de 1° EMS de Chapicuy, realizan una representación viviente a ustedes para la celebración del Bicentenario. Invitando a proyectar el futuro de la nación desde está representación propuesta; mediante la propuesta de coherencia con los compatriotas que nos representaron en el proceso revolucionario y en la Sala de Florida, y para ello,  se debe seguir consolidando la libertad, la democracia, la justicia y el republicanismo; que fueron los principios movilizadores de los libertadores y deben ser los principios rectores en nuestra Institución Educativa y en la vida diaria como ciudadanos y orientales.</p>
+
+<br>
+
+<p>Por Prof. Sandra Baratta</p>`
         },
         4: {
             title: "Título Completo del Artículo 4",
