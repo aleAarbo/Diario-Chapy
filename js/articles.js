@@ -7,11 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Datos de ejemplo para los artículos completos
     const articlesData = {
-    1: {
-        title: "Bicentenario de Uruguay: La compleja forja de una nación",
-        image: "declaratorioa de la independencia.png",
-        content: `<p>A 200 años de la Declaratoria de la Florida, un repaso por los intrincados orígenes de un país que nació más por intereses geopolíticos foráneos que por una voluntad unánime de independencia. 
-        
+        1: {
+            title: "Bicentenario de Uruguay: La compleja forja de una nación",
+            image: "/img/declaratorioa de la independencia.png",
+            content: `<h4>A 200 años de la Declaratoria de la Florida, un repaso por los intrincados orígenes de un país que nació más por intereses geopolíticos foráneos que por una voluntad unánime de independencia.</h4>
+            </br>
+            <p>A 200 años de la Declaratoria de la Florida, un repaso por los intrincados orígenes de un país que nació más por intereses geopolíticos foráneos que por una voluntad unánime de independencia. 
+            
 Por Profiler. Manuel Albisu 
 
 Montevideo, 26 de agosto de 2025. – Ayer, con los ecos de los festejos del bicentenario aún en el aire, Uruguay cerró un capítulo de celebración y abrió uno de reflexión. Dos siglos de vida independiente son, sin duda, un hito para una sociedad joven, un punto de inflexión para consolidar el presente y proyectar el futuro. Sin embargo, la mirada hacia el ayer nos revela una historia de gestación compleja, donde los hilos del destino nacional no siempre se tejieron desde dentro, sino que fueron manipulados por las potencias de la época.
@@ -42,7 +44,6 @@ Celebrar el bicentenario es, por lo tanto, mucho más que conmemorar una fecha. 
 
 La verdad histórica, a veces incómoda, es la que nos permite afianzarnos con mayor solidez. Al cumplir 200 años, Uruguay no solo mira con orgullo su trayectoria, sino que también se reconcilia con la complejidad de sus orígenes, asumiendo que la fortaleza de una nación joven reside en su capacidad para entender su pasado con claridad y valentía.</p>`
         },
-    };
         2: {
             title: "Título Completo del Artículo 2",
             image: "articulo2.jpg",
@@ -59,8 +60,7 @@ La verdad histórica, a veces incómoda, es la que nos permite afianzarnos con m
             content: "<p>Contenido completo del cuarto artículo. Aquí puedes incluir todo el texto, imágenes y otros elementos que quieras mostrar cuando el usuario haga clic en 'Leer más'.</p><p>Puedes agregar tantos párrafos como necesites para mostrar toda la información.</p>"
         }
     };
-    
-    // Función para abrir el modal con el artículo completo
+    // FUNCIÓN QUE FALTABA - AGREGAR ESTA FUNCIÓN
     function openArticleModal(articleId) {
         const article = articlesData[articleId];
         if (article) {
@@ -70,6 +70,7 @@ La verdad histórica, a veces incómoda, es la que nos permite afianzarnos con m
                 ${article.content}
             `;
             modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Previene scroll del body
         }
     }
     
@@ -84,12 +85,14 @@ La verdad histórica, a veces incómoda, es la que nos permite afianzarnos con m
     // Cerrar modal al hacer clic en la X
     closeBtn.addEventListener('click', function() {
         modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restaura scroll
     });
     
     // Cerrar modal al hacer clic fuera del contenido
     window.addEventListener('click', function(event) {
         if (event.target === modal) {
             modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restaura scroll
         }
     });
 });
