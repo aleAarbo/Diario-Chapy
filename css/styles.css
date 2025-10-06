@@ -80,27 +80,24 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* Sección principal */
+/* Sección principal con texto envolvente */
 .main-section {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 20px;
+    padding: 20px;
+    position: relative;
 }
 
 .main-article {
-    flex: 1 1 60%;
-    min-width: 300px;
+    float: left;
+    width: 45%;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .main-aside {
-    flex: 1 1 35%;
-    min-width: 250px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
+    overflow: hidden;
+    padding: 0 20px;
 }
 
 /* Carrusel */
@@ -336,6 +333,60 @@ footer {
     color: white;
 }
 
+/* Fondo degradado para secciones y artículos */
+.main-section,
+.articles-section,
+.dynamic-article {
+    background: linear-gradient(135deg, #2d5a2d 0%, #3a6b3a 25%, #2d5a2d 50%, #3a6b3a 75%, #2d5a2d 100%);
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Efecto de fumigado ocre */
+.main-section::before,
+.articles-section::before,
+.dynamic-article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(204, 153, 0, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(204, 153, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(204, 153, 0, 0.12) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Asegurar que el contenido esté por encima del fondo */
+.main-section > *,
+.articles-section > *,
+.dynamic-article > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mejorar legibilidad del texto */
+.main-aside,
+.article-content {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-aside h2,
+.main-aside h4,
+.main-aside p,
+.main-aside strong,
+.main-aside ul,
+.article-content h3,
+.article-content p {
+    color: #333;
+}
+
 /* Media Queries para Responsividad */
 
 /* Tablets (768px - 1024px) */
@@ -380,8 +431,14 @@ footer {
         gap: 15px;
     }
     
-    .main-article, .main-aside {
-        flex: 1 1 100%;
+    .main-article {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .main-aside {
+        padding: 20px 0 0 0;
     }
     
     .slide img {
