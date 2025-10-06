@@ -73,9 +73,33 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>Por Prof. Manuel Albisu</p>`
         },
         2: {
-            title: "Título Completo del Artículo 2",
-            image: "articulo2.jpg",
-            content: "<p>Contenido completo del segundo artículo. Aquí puedes incluir todo el texto, imágenes y otros elementos que quieras mostrar cuando el usuario haga clic en 'Leer más'.</p><p>Puedes agregar tantos párrafos como necesites para mostrar toda la información.</p>"
+            title: "La mujer en el Relato de la Historia.",
+            image: "/img/historia 1.png",
+            content: `<h4>Mujeres en tiempo de la Independencia.</h4>
+            
+            <br>
+            <img src="/img/historia 2.png" alt="Mujeres en la Independencia" style="width:100%; max-height:400px; object-fit:cover; margin:15px 0;">
+            <br>
+
+            <p>Nuestra historia de independencia en los libros de Historia menciona nombres de hombres a lo largo de los siglos XIX y XX. Esto se debió a la subjetividad de la época en donde los únicos roles aceptados para una mujer era el de madre abnegada, esposa sumisa. Así mismo, en las diferentes clases sociales, las mujeres de clase social más baja debían de trabajar para sobrevivir.   Pero, déjame contarte que las mujeres han jugado un papel importante en la historia de Uruguay, su rol fue particularmente notable durante la guerra de independencia del país. El género femenino fue relegado a menudo a las sombras, las mujeres uruguayas desempeñaron roles cruciales en la lucha por la independencia; existieron mujeres que cumplieron el rol de lanceras en las fuerzas artiguistas, acompañando a sus hombres en las fuerzas revolucionarias, cocineras, soldadas contribuyendo en el frente de batalla como en la retaguardia.</p>
+
+<br>
+<img src="/img/historia 3.png" alt="Mujeres en la Independencia" style="width:100%; max-height:400px; object-fit:cover; margin:15px 0;">
+<br>
+<img src="/img/historia 4.png" alt="Mujeres en la Independencia" style="width:100%; max-height:400px; object-fit:cover; margin:15px 0;">
+<br>
+
+<p>Aunque los nombres de estás mujeres no se mencionan en los libros de historia. Estas mujeres son testimonio del papel crucial que desempeñaron en la lucha por la libertad, actuando con valentía y determinación; ellas fueron valientes y contribuyeron a la formación de la nación actual uruguaya. Muchas de ellas ayudaron en la atención a los heridos, provisión de alimentos y valientemente participaron en combates.
+Claro ejemplo, que quiero destacar es el de las “Trece Orientales” que a pesar de dificultades y riesgos movilizaron a la población y desempeñaron un papel activo en la resistencia invasora.
+Un ejemplo notable es el de las “Trece Orientales”, un grupo de mujeres que desempeñaron un papel importante en la independencia de Uruguay. A pesar de las dificultades y los riesgos, estas mujeres fueron capaces de movilizar a la población y desempeñar un papel activo en la resistencia contra las fuerzas invasoras. Estos roles desafiaban las normas de género de la época. A pesar de estar sujetas a la visión patriarcal; desafiaron las reglas sociales y demostrando coraje y valor lucharon por la igualdad y la justicia.
+Entre las mujeres destacadas se puede mencionar el nombre Dámasa Tanco que es sinónimo de coraje y compasión y que fue una activista social y política; desempeñando un rol crucial en la independencia del Uruguay. Ella; cuando Montevideo fue sitiada por las fuerzas portuguesas, permaneció en la ciudad arriesgando su vida para cuidar heridos y a las personas más vulnerables. Y durante los tiempos de independencia dio refugio a los necesitados, proporcionó alimentos y ayudó a los soldados y heridos. El legado de Dámasa Tanco sigue vive y su historia debe ser contada para que sirva a las nuevas generaciones como inspiración, ella demostró con sus actos que las mujeres pueden ser líderes fuertes y que su nombre es sinónimo de coraje y compasión.  
+También no son menos importantes las mujeres que tuvieron un rol vital en el mantenimiento de la economía doméstica, en tiempos coloniales; a menudo su dedicación eran las tareas domésticas, actividades comerciales y productivas además de criar a sus hijos.  Muchas de estas mujeres se dedicaban a la venta de bienes y productos en los mercados locales, contribuyendo así al sustento económico de sus familias.
+Otro nombre a destacar es el de Petrona Rosende de Sierra, quien nació en Montevideo en 1806, y se destaca por la lucha incansable de los derechos de las mujeres y la igualdad de género; siendo la fundadora de la primera escuela femenina del país para que la mujer pudiera alcanzar la vida pública y política, desafiando las normas de género de la época. Petrona es conocida por ser una de las primeras feministas de Uruguay y de América Latina y fue galardonada con el título de “Benemérita de la Patria”, además de seguir inspirando a las futuras generaciones por la lucha de la igualdad de derechos.
+</p>
+
+<br>
+
+<p>Por Prof. Sandra Baratta</p>`
         },
         3: {
             title: "Título Completo del Artículo 3",
