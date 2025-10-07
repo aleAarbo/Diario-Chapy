@@ -97,53 +97,70 @@ nav ul li a:hover {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+/* Estilos para el carrusel dentro de artículos */
+.article-carousel {
+    position: relative;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
 .carousel-slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slide {
-    min-width: 100%;
     position: relative;
-}
-
-.slide img {
-    width: 100%;
     height: 400px;
-    object-fit: cover;
-    display: block;
 }
 
-.carousel-btn {
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.carousel-prev, .carousel-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5);
     color: white;
     border: none;
-    padding: 12px 16px;
+    padding: 10px 15px;
     cursor: pointer;
-    font-size: 20px;
-    z-index: 10;
+    font-size: 18px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.carousel-btn:hover {
-    background-color: rgba(0,0,0,0.7);
-}
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
 
-.carousel-btn.prev {
-    left: 15px;
-}
-
-.carousel-btn.next {
-    right: 15px;
+.carousel-prev:hover, .carousel-next:hover {
+    background: rgba(0,0,0,0.8);
 }
 
 .carousel-indicators {
@@ -155,17 +172,49 @@ nav ul li a:hover {
     gap: 10px;
 }
 
-.indicator {
+.carousel-indicators .indicator {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.5);
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.indicator.active {
-    background-color: white;
+.carousel-indicators .indicator.active {
+    background: white;
+}
+
+/* Estilos para carrusel simple */
+.simple-carousel {
+    position: relative;
+    margin: 20px 0;
+}
+
+.simple-carousel .carousel-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: none;
+}
+
+.simple-carousel .carousel-img.active {
+    display: block;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Sección de artículos */

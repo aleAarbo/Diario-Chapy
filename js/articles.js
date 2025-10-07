@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Datos de ejemplo para los artículos completos
     const articlesData = {
+        // primer artículo
         1: {
             title: "Bicentenario de Uruguay: La compleja forja de una nación",
             image: "/img/declaratorioa de la independencia.png",
@@ -72,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <p>Por Prof. Manuel Albisu</p>`
         },
+
+        // segundo artículo
         2: {
             title: "La mujer en el Relato de la Historia.",
             image: "/img/historia 1.png",
@@ -101,6 +104,7 @@ Otro nombre a destacar es el de Petrona Rosende de Sierra, quien nació en Monte
 
 <p>Por Prof. Sandra Baratta</p>`
         },
+        // tercer artículo
         3: {
             title: "Sala de la Florida",
             image: "/img/asamblea de la florida.png",
@@ -144,13 +148,33 @@ Queda la Prov. Oriental del Río de la Plata unida a las demás de este nombre e
 
 <p>Por Prof. Sandra Baratta</p>`
         },
+        //artículo con carrusell
+
         4: {
-            title: "Título Completo del Artículo 4",
-            image: "articulo4.jpg",
-            content: "<p>Contenido completo del cuarto artículo. Aquí puedes incluir todo el texto, imágenes y otros elementos que quieras mostrar cuando el usuario haga clic en 'Leer más'.</p><p>Puedes agregar tantos párrafos como necesites para mostrar toda la información.</p>"
-        }
+            title: "Chapicuy dijo presente en la jornada del Bicentenario en Quebracho",
+            content: `
+                <!-- Carrusel simple -->
+                    <div class="simple-carousel">
+                        <img src="./img/bi quebra/quebra portada.jfif" alt="Foto 1" class="carousel-img active">
+                        <img src="./img/bi quebra/1.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/bi quebra/11.jfif" alt="Foto 3" class="carousel-img">
+                        <img src="./img/bi quebra/2.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/bi quebra/2.jpeg" alt="Foto 2" class="carousel-img">
+                        <img src="./img/bi quebra/3.jpeg" alt="Foto 2" class="carousel-img">
+                        <img src="./img/bi quebra/4.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/bi quebra/6.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/bi quebra/9.jfif" alt="Foto 2" class="carousel-img">
+                        <div class="carousel-controls">
+                            <button onclick="prevSlide(this)">Anterior</button>
+                             <button onclick="nextSlide(this)">Siguiente</button>
+                        </div>
+                    </div>
+                    <p>Estudiantes de 2° y 3° año de Educación Media Superior del Liceo Rural de Chapicuy participaron activamente en la jornada conmemorativa del Bicentenario de la Declaratoria de la Independencia, realizada en la localidad de Quebracho.
+En conjunto con los estudiantes de 2° año de Educación Media Superior de Quebracho, presentaron una exposición sobre el Candombe, resaltando su valor cultural y su importancia como expresión identitaria del país.
+La participación de los estudiantes chapicuenses fue recibida con entusiasmo por el público y destacó por su compromiso, creatividad y espíritu colaborativo, contribuyendo al clima festivo y de celebración de esta importante fecha patria..</p>`
+            }
     };
-    // FUNCIÓN QUE FALTABA - AGREGAR ESTA FUNCIÓN
+  
     function openArticleModal(articleId) {
         const article = articlesData[articleId];
         if (article) {
@@ -186,3 +210,65 @@ Queda la Prov. Oriental del Río de la Plata unida a las demás de este nombre e
         }
     });
 });
+
+
+
+function prevCarouselSlide(carousel) {
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const indicators = carousel.querySelectorAll('.indicator');
+    let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+    
+    slides[currentIndex].classList.remove('active');
+    indicators[currentIndex].classList.remove('active');
+    
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    
+    slides[currentIndex].classList.add('active');
+    indicators[currentIndex].classList.add('active');
+}
+
+function nextCarouselSlide(carousel) {
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const indicators = carousel.querySelectorAll('.indicator');
+    let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+    
+    slides[currentIndex].classList.remove('active');
+    indicators[currentIndex].classList.remove('active');
+    
+    currentIndex = (currentIndex + 1) % slides.length;
+    
+    slides[currentIndex].classList.add('active');
+    indicators[currentIndex].classList.add('active');
+}
+
+function goToCarouselSlide(carousel, index) {
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const indicators = carousel.querySelectorAll('.indicator');
+    
+    slides.forEach(slide => slide.classList.remove('active'));
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    
+    slides[index].classList.add('active');
+    indicators[index].classList.add('active');
+}
+
+// Funciones para carrusel simple - AGREGAR ESTO
+function prevSlide(button) {
+    const carousel = button.closest('.simple-carousel');
+    const images = carousel.querySelectorAll('.carousel-img');
+    let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+    
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    images[currentIndex].classList.add('active');
+}
+
+function nextSlide(button) {
+    const carousel = button.closest('.simple-carousel');
+    const images = carousel.querySelectorAll('.carousel-img');
+    let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+    
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+}
