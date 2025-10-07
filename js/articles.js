@@ -1,10 +1,10 @@
 // Funcionalidad para artículos dinámicos
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('article-modal');
     const modalBody = document.getElementById('modal-body');
     const closeBtn = document.querySelector('.close');
     const readMoreBtns = document.querySelectorAll('.read-more');
-    
+
     // Datos de ejemplo para los artículos completos
     const articlesData = {
         // primer artículo
@@ -174,9 +174,9 @@ En conjunto con los estudiantes de 2° año de Educación Media Superior de Queb
 La participación de los estudiantes chapicuenses fue recibida con entusiasmo por el público y destacó por su compromiso, creatividad y espíritu colaborativo, contribuyendo al clima festivo y de celebración de esta importante fecha patria..</p>
 <br>
 <p>Por Prof. Noel Imer</p>`
-            },
+        },
 
-            // segundo artículo
+        // quinto artículo
         5: {
             title: "¡Orgullo Chapicuyense! Nuestros Estudiantes Brillan en las Olimpiadas de Matemática",
             content: `
@@ -196,16 +196,45 @@ La participación de los estudiantes chapicuenses fue recibida con entusiasmo po
                         </div>
                     </div>
             
-            <p>Con mucho esfuerzo y dedicación, un grupo de estudiantes de nuestro Liceo Rural de Chapicuy llegó a las Semifinales de las Olimpiadas de Matemática. Este logro es el fruto de meses de preparación y demuestra el gran talento que existe en nuestra comunidad educativa. [Nombres de los estudiantes] han representado con mucho honor a nuestro liceo en esta competencia nacional.</p>
-<br>
-<p>La experiencia no solo fue un desafío académico, sino también una oportunidad invaluable de crecimiento. Los estudiantes viajaron, conocieron a participantes de todo el país y enfrentaron los exámenes con gran determinación y calma. Este logro va más allá de los números; es una prueba de que con perseverancia y el apoyo de profesores y familias, no hay meta que no se pueda alcanzar.</p>
-<br>
-<p>Desde el Liceo de Chapicuy, queremos expresar nuestro enorme orgullo por estos jóvenes campeones. Su éxito inspira a todos sus compañeros y llena de alegría a todo el pueblo. ¡Felicitaciones! Son un ejemplo brillante de que el talento y la inteligencia florecen con fuerza en la ruralidad.</p>
-<br>
-<p>Por Prof. Sandra Baratta</p>`
+                    <p>Con mucho esfuerzo y dedicación, un grupo de estudiantes de nuestro Liceo Rural de Chapicuy llegó a las Semifinales de las Olimpiadas de Matemática. Este logro es el fruto de meses de preparación y demuestra el gran talento que existe en nuestra comunidad educativa. [Nombres de los estudiantes] han representado con mucho honor a nuestro liceo en esta competencia nacional.</p>
+                    <br>
+                    <p>La experiencia no solo fue un desafío académico, sino también una oportunidad invaluable de crecimiento. Los estudiantes viajaron, conocieron a participantes de todo el país y enfrentaron los exámenes con gran determinación y calma. Este logro va más allá de los números; es una prueba de que con perseverancia y el apoyo de profesores y familias, no hay meta que no se pueda alcanzar.</p>
+                    <br>
+                    <p>Desde el Liceo de Chapicuy, queremos expresar nuestro enorme orgullo por estos jóvenes campeones. Su éxito inspira a todos sus compañeros y llena de alegría a todo el pueblo. ¡Felicitaciones! Son un ejemplo brillante de que el talento y la inteligencia florecen con fuerza en la ruralidad.</p>
+                    <br>
+                    <p>Por Prof. Luis Carbonell</p>`
+        },
+
+         // sexto artículo
+        6: {
+            title: "Viviendo y Aprendiendo bajo las Estrellas: Estudiantes de 7° Grado del Liceo Rural de Chapicuy Participaron en un Campamento Educativo",
+            content: `
+            <!-- Carrusel simple -->
+                    <div class="simple-carousel">
+                        <img src="./img/semifinales olimpiada/10.jfif" alt="Foto 1" class="carousel-img active">
+                        <img src="./img/semifinales olimpiada/2.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/3.jfif" alt="Foto 3" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/4.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/5.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/59ef7667-a832-4cb9-82b4-ffa1749ba2a8.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/8.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/9.jfif" alt="Foto 2" class="carousel-img">
+                        <div class="carousel-controls">
+                            <button onclick="prevSlide(this)">Anterior</button>
+                             <button onclick="nextSlide(this)">Siguiente</button>
+                        </div>
+                    </div>
+            
+                    <p>En el marco del Plan de Desarrollo Educativo, la ANEP implementa los Campamentos Educativos como una estrategia pedagógica innovadora, concibiéndolos como "intervalos potenciadores" de aprendizajes significativos. Esta propuesta, destinada prioritariamente a estudiantes de contextos rurales y vulnerables, tuvo a sus protagonistas en Chapicuy: los alumnos de 7° grado de nuestro Liceo Rural, quienes vivieron una experiencia transformadora que trascendió las paredes del aula.</p>
+                    <br>
+                    <p>Durante el campamento, los estudiantes se sumergieron en un programa diseñado para fortalecer la convivencia, el respeto y el trabajo en equipo. A través de caminatas, talleres, fogones y juegos cooperativos, pusieron en práctica valores como la solidaridad y la responsabilidad. Esta vivencia, que incluyó todas las etapas (pre-campamento, campamento y pos-campamento), no solo les permitió conocer nuevos entornos naturales, sino también formar parte de una "comunidad transitoria", donde fortalecieron su identidad grupal y revinculación con el centro educativo.</p>
+                    <br>
+                    <p>Para nuestro Liceo, esta experiencia representa la concreción de una política educativa que busca reducir la inequidad y enriquecer las trayectorias de los estudiantes. Más que un viaje, fue una poderosa herramienta pedagógica que dejó huellas imborrables. Los estudiantes de Chapicuy demostraron una vez más que, cuando se ofrecen las mismas oportunidades, el talento y el crecimiento florecen en todos los rincones del país.</p>
+                    <br>
+                    <p>Por Prof. Luis Carbonell</p>`
         },
     };
-  
+
     function openArticleModal(articleId) {
         const article = articlesData[articleId];
         if (article) {
@@ -218,23 +247,23 @@ La participación de los estudiantes chapicuenses fue recibida con entusiasmo po
             document.body.style.overflow = 'hidden'; // Previene scroll del body
         }
     }
-    
+
     // Event listeners para botones "Leer más"
     readMoreBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             const articleId = this.closest('.dynamic-article').getAttribute('data-id');
             openArticleModal(articleId);
         });
     });
-    
+
     // Cerrar modal al hacer clic en la X
-    closeBtn.addEventListener('click', function() {
+    closeBtn.addEventListener('click', function () {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto'; // Restaura scroll
     });
-    
+
     // Cerrar modal al hacer clic fuera del contenido
-    window.addEventListener('click', function(event) {
+    window.addEventListener('click', function (event) {
         if (event.target === modal) {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto'; // Restaura scroll
@@ -248,12 +277,12 @@ function prevCarouselSlide(carousel) {
     const slides = carousel.querySelectorAll('.carousel-slide');
     const indicators = carousel.querySelectorAll('.indicator');
     let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
-    
+
     slides[currentIndex].classList.remove('active');
     indicators[currentIndex].classList.remove('active');
-    
+
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    
+
     slides[currentIndex].classList.add('active');
     indicators[currentIndex].classList.add('active');
 }
@@ -262,12 +291,12 @@ function nextCarouselSlide(carousel) {
     const slides = carousel.querySelectorAll('.carousel-slide');
     const indicators = carousel.querySelectorAll('.indicator');
     let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
-    
+
     slides[currentIndex].classList.remove('active');
     indicators[currentIndex].classList.remove('active');
-    
+
     currentIndex = (currentIndex + 1) % slides.length;
-    
+
     slides[currentIndex].classList.add('active');
     indicators[currentIndex].classList.add('active');
 }
@@ -275,10 +304,10 @@ function nextCarouselSlide(carousel) {
 function goToCarouselSlide(carousel, index) {
     const slides = carousel.querySelectorAll('.carousel-slide');
     const indicators = carousel.querySelectorAll('.indicator');
-    
+
     slides.forEach(slide => slide.classList.remove('active'));
     indicators.forEach(indicator => indicator.classList.remove('active'));
-    
+
     slides[index].classList.add('active');
     indicators[index].classList.add('active');
 }
@@ -288,7 +317,7 @@ function prevSlide(button) {
     const carousel = button.closest('.simple-carousel');
     const images = carousel.querySelectorAll('.carousel-img');
     let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
-    
+
     images[currentIndex].classList.remove('active');
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     images[currentIndex].classList.add('active');
@@ -298,7 +327,7 @@ function nextSlide(button) {
     const carousel = button.closest('.simple-carousel');
     const images = carousel.querySelectorAll('.carousel-img');
     let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
-    
+
     images[currentIndex].classList.remove('active');
     currentIndex = (currentIndex + 1) % images.length;
     images[currentIndex].classList.add('active');
