@@ -426,6 +426,14 @@ footer {
     color: #333;
 }
 
+.video-container {
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 /* Media Queries para Responsividad */
 
 /* Tablets (768px - 1024px) */

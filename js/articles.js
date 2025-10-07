@@ -209,21 +209,13 @@ La participación de los estudiantes chapicuenses fue recibida con entusiasmo po
         6: {
             title: "Viviendo y Aprendiendo bajo las Estrellas: Estudiantes de 7° Grado del Liceo Rural de Chapicuy Participaron en un Campamento Educativo",
             content: `
-            <!-- Carrusel simple -->
-                    <div class="simple-carousel">
-                        <img src="./img/semifinales olimpiada/10.jfif" alt="Foto 1" class="carousel-img active">
-                        <img src="./img/semifinales olimpiada/2.jfif" alt="Foto 2" class="carousel-img">
-                        <img src="./img/semifinales olimpiada/3.jfif" alt="Foto 3" class="carousel-img">
-                        <img src="./img/semifinales olimpiada/4.jfif" alt="Foto 2" class="carousel-img">
-                        <img src="./img/semifinales olimpiada/5.jfif" alt="Foto 2" class="carousel-img">
-                        <img src="./img/semifinales olimpiada/59ef7667-a832-4cb9-82b4-ffa1749ba2a8.jfif" alt="Foto 2" class="carousel-img">
-                        <img src="./img/semifinales olimpiada/8.jfif" alt="Foto 2" class="carousel-img">
-                        <img src="./img/semifinales olimpiada/9.jfif" alt="Foto 2" class="carousel-img">
-                        <div class="carousel-controls">
-                            <button onclick="prevSlide(this)">Anterior</button>
-                             <button onclick="nextSlide(this)">Siguiente</button>
+                    <!-- Video del campamento educativo -->
+                        <div class="video-container">
+                            <video controls width="100%">
+                                <source src="./videos/campamento.mp4" type="video/mp4">
+                                <source src="./video/campamento-chapicuy.webm" type="video/webm">
+                            </video>
                         </div>
-                    </div>
             
                     <p>En el marco del Plan de Desarrollo Educativo, la ANEP implementa los Campamentos Educativos como una estrategia pedagógica innovadora, concibiéndolos como "intervalos potenciadores" de aprendizajes significativos. Esta propuesta, destinada prioritariamente a estudiantes de contextos rurales y vulnerables, tuvo a sus protagonistas en Chapicuy: los alumnos de 7° grado de nuestro Liceo Rural, quienes vivieron una experiencia transformadora que trascendió las paredes del aula.</p>
                     <br>
@@ -232,6 +224,21 @@ La participación de los estudiantes chapicuenses fue recibida con entusiasmo po
                     <p>Para nuestro Liceo, esta experiencia representa la concreción de una política educativa que busca reducir la inequidad y enriquecer las trayectorias de los estudiantes. Más que un viaje, fue una poderosa herramienta pedagógica que dejó huellas imborrables. Los estudiantes de Chapicuy demostraron una vez más que, cuando se ofrecen las mismas oportunidades, el talento y el crecimiento florecen en todos los rincones del país.</p>
                     <br>
                     <p>Por Prof. Luis Carbonell</p>`
+        },
+        7: {
+            title: "Talleres",
+            content: `
+                    <!-- Carrusel simple -->
+                    <div class="simple-carousel">
+                        <img src="./img/talleres/cuarta.jfif" alt="Foto 1" class="carousel-img active">
+                        <img src="./img/talleres/primera.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/talleres/segunda.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/talleres/tercera.jfif" alt="Foto 2" class="carousel-img">
+                        <div class="carousel-controls">
+                            <button onclick="prevSlide(this)">Anterior</button>
+                             <button onclick="nextSlide(this)">Siguiente</button>
+                        </div>
+                    </div>`
         },
     };
 
