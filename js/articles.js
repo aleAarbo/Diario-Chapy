@@ -171,8 +171,39 @@ Queda la Prov. Oriental del Río de la Plata unida a las demás de este nombre e
                     </div>
                     <p>Estudiantes de 2° y 3° año de Educación Media Superior del Liceo Rural de Chapicuy participaron activamente en la jornada conmemorativa del Bicentenario de la Declaratoria de la Independencia, realizada en la localidad de Quebracho.
 En conjunto con los estudiantes de 2° año de Educación Media Superior de Quebracho, presentaron una exposición sobre el Candombe, resaltando su valor cultural y su importancia como expresión identitaria del país.
-La participación de los estudiantes chapicuenses fue recibida con entusiasmo por el público y destacó por su compromiso, creatividad y espíritu colaborativo, contribuyendo al clima festivo y de celebración de esta importante fecha patria..</p>`
-            }
+La participación de los estudiantes chapicuenses fue recibida con entusiasmo por el público y destacó por su compromiso, creatividad y espíritu colaborativo, contribuyendo al clima festivo y de celebración de esta importante fecha patria..</p>
+<br>
+<p>Por Prof. Noel Imer</p>`
+            },
+
+            // segundo artículo
+        5: {
+            title: "¡Orgullo Chapicuyense! Nuestros Estudiantes Brillan en las Olimpiadas de Matemática",
+            content: `
+            <!-- Carrusel simple -->
+                    <div class="simple-carousel">
+                        <img src="./img/semifinales olimpiada/10.jfif" alt="Foto 1" class="carousel-img active">
+                        <img src="./img/semifinales olimpiada/2.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/3.jfif" alt="Foto 3" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/4.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/5.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/59ef7667-a832-4cb9-82b4-ffa1749ba2a8.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/8.jfif" alt="Foto 2" class="carousel-img">
+                        <img src="./img/semifinales olimpiada/9.jfif" alt="Foto 2" class="carousel-img">
+                        <div class="carousel-controls">
+                            <button onclick="prevSlide(this)">Anterior</button>
+                             <button onclick="nextSlide(this)">Siguiente</button>
+                        </div>
+                    </div>
+            
+            <p>Con mucho esfuerzo y dedicación, un grupo de estudiantes de nuestro Liceo Rural de Chapicuy llegó a las Semifinales de las Olimpiadas de Matemática. Este logro es el fruto de meses de preparación y demuestra el gran talento que existe en nuestra comunidad educativa. [Nombres de los estudiantes] han representado con mucho honor a nuestro liceo en esta competencia nacional.</p>
+<br>
+<p>La experiencia no solo fue un desafío académico, sino también una oportunidad invaluable de crecimiento. Los estudiantes viajaron, conocieron a participantes de todo el país y enfrentaron los exámenes con gran determinación y calma. Este logro va más allá de los números; es una prueba de que con perseverancia y el apoyo de profesores y familias, no hay meta que no se pueda alcanzar.</p>
+<br>
+<p>Desde el Liceo de Chapicuy, queremos expresar nuestro enorme orgullo por estos jóvenes campeones. Su éxito inspira a todos sus compañeros y llena de alegría a todo el pueblo. ¡Felicitaciones! Son un ejemplo brillante de que el talento y la inteligencia florecen con fuerza en la ruralidad.</p>
+<br>
+<p>Por Prof. Sandra Baratta</p>`
+        },
     };
   
     function openArticleModal(articleId) {
