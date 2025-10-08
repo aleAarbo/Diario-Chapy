@@ -226,10 +226,10 @@ La participación de los estudiantes chapicuenses fue recibida con entusiasmo po
                     <p>Por Prof. Luis Carbonell</p>`
         },
         7: {
-            title: "Talleres",
+            title: "Liceo Rural de Chapicuy: Talleres",
             content: `
-                    <!-- Carrusel simple -->
-                    <div class="simple-carousel">
+                    <!-- Carrusel Original -->
+                    <div class="original-carousel">
                         <img src="./img/talleres/cuarta.jfif" alt="Foto 1" class="carousel-img active">
                         <img src="./img/talleres/primera.jfif" alt="Foto 2" class="carousel-img">
                         <img src="./img/talleres/segunda.jfif" alt="Foto 2" class="carousel-img">
