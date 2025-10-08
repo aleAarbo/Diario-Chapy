@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Periódico Digital - Liceo Rural Chapicuy</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header.header-container {
+      position: relative;
+      text-align: center;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .quote-box {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      max-width: 300px;
+      background-color: rgba(255, 255, 255, 0.75);
+      color: #000;
+      font-style: italic;
+      padding: 1rem;
+      border-radius: 8px;
+      font-family: sans-serif;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- Header incluido desde archivo externo -->
+  <div id="header-container"></div>
+
+  <!-- Barra de navegación -->
+  <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería Módulo Introductorio</a></li>
+            <li><a href="galeria-dia del libro.html">Galería Día del Libro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+  <div id="videoModal"
+    style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+    <video id="modalVideo" controls autoplay muted style="max-width:90%; max-height:90%;"></video>
+  </div>
+
+  <script>
+    const videoThumbs = document.querySelectorAll('.video-thumb');
+    const modal = document.getElementById('videoModal');
+    const modalVideo = document.getElementById('modalVideo');
+
+    videoThumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modalVideo.src = thumb.src;
+        modalVideo.play();
+      });
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        modalVideo.pause();
+        modalVideo.currentTime = 0;
+        modalVideo.src = '';
+      }
+    });
+  </script>
+  <br>
+  <hr style="border-color:red;">
+
+  <h2 class="text-center mb-3">Día del Libro</h2>
+  <h3 class="text-center mb-3">Fotos de las actividades realizados por estudiantes y docentes.</h3>
+  <div class="container mt-4">
+    <div class="row g-3">
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027082.jpg" class="img-fluid img-clickable" alt="1750188027082.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027107.jpg" class="img-fluid img-clickable" alt="1750188027107.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027138.jpg" class="img-fluid img-clickable" alt="1750188027138.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027148.jpg" class="img-fluid img-clickable" alt="1750188027148.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027156.jpg" class="img-fluid img-clickable" alt="1750188027156.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027166.jpg" class="img-fluid img-clickable" alt="1750188027166.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027179.jpg" class="img-fluid img-clickable" alt="1750188027179.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027204.jpg" class="img-fluid img-clickable" alt="1750188027204.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027217.jpg" class="img-fluid img-clickable" alt="1750188027217.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027231.jpg" class="img-fluid img-clickable" alt="1750188027231.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027253.jpg" class="img-fluid img-clickable" alt="1750188027253.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027264.jpg" class="img-fluid img-clickable" alt="1750188027264.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027276.jpg" class="img-fluid img-clickable" alt="1750188027276.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027286.jpg" class="img-fluid img-clickable" alt="1750188027286.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027297.jpg" class="img-fluid img-clickable" alt="1750188027297.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027308.jpg" class="img-fluid img-clickable" alt="1750188027308.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027318.jpg" class="img-fluid img-clickable" alt="1750188027318.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027330.jpg" class="img-fluid img-clickable" alt="1750188027330.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027344.jpg" class="img-fluid img-clickable" alt="1750188027344.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027355.jpg" class="img-fluid img-clickable" alt="1750188027355.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027366.jpg" class="img-fluid img-clickable" alt="1750188027366.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027392.jpg" class="img-fluid img-clickable" alt="1750188027392.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027410.jpg" class="img-fluid img-clickable" alt="1750188027410.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027422.jpg" class="img-fluid img-clickable" alt="1750188027422.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027454.jpg" class="img-fluid img-clickable" alt="1750188027454.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027464.jpg" class="img-fluid img-clickable" alt="1750188027464.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027472.jpg" class="img-fluid img-clickable" alt="1750188027472.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027483.jpg" class="img-fluid img-clickable" alt="1750188027483.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027490.jpg" class="img-fluid img-clickable" alt="1750188027490.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027497.jpg" class="img-fluid img-clickable" alt="1750188027497.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027503.jpg" class="img-fluid img-clickable" alt="1750188027503.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027509.jpg" class="img-fluid img-clickable" alt="1750188027509.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027517.jpg" class="img-fluid img-clickable" alt="1750188027517.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027523.jpg" class="img-fluid img-clickable" alt="1750188027523.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027529.jpg" class="img-fluid img-clickable" alt="1750188027529.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027537.jpg" class="img-fluid img-clickable" alt="1750188027537.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027544.jpg" class="img-fluid img-clickable" alt="1750188027544.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027555.jpg" class="img-fluid img-clickable" alt="1750188027555.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027571.jpg" class="img-fluid img-clickable" alt="1750188027571.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027579.jpg" class="img-fluid img-clickable" alt="1750188027579.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027585.jpg" class="img-fluid img-clickable" alt="1750188027585.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027597.jpg" class="img-fluid img-clickable" alt="1750188027597.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027604.jpg" class="img-fluid img-clickable" alt="1750188027604.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027612.jpg" class="img-fluid img-clickable" alt="1750188027612.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027621.jpg" class="img-fluid img-clickable" alt="1750188027621.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027628.jpg" class="img-fluid img-clickable" alt="1750188027628.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027637.jpg" class="img-fluid img-clickable" alt="1750188027637.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027646.jpg" class="img-fluid img-clickable" alt="1750188027646.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027655.jpg" class="img-fluid img-clickable" alt="1750188027655.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027667.jpg" class="img-fluid img-clickable" alt="1750188027667.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027692.jpg" class="img-fluid img-clickable" alt="1750188027692.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027718.jpg" class="img-fluid img-clickable" alt="1750188027718.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027740.jpg" class="img-fluid img-clickable" alt="1750188027740.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027767.jpg" class="img-fluid img-clickable" alt="1750188027767.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027790.jpg" class="img-fluid img-clickable" alt="1750188027790.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027816.jpg" class="img-fluid img-clickable" alt="1750188027816.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027827.jpg" class="img-fluid img-clickable" alt="1750188027827.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027839.jpg" class="img-fluid img-clickable" alt="1750188027839.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027850.jpg" class="img-fluid img-clickable" alt="1750188027850.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027859.jpg" class="img-fluid img-clickable" alt="1750188027859.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027867.jpg" class="img-fluid img-clickable" alt="1750188027867.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027877.jpg" class="img-fluid img-clickable" alt="1750188027877.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027888.jpg" class="img-fluid img-clickable" alt="1750188027888.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027898.jpg" class="img-fluid img-clickable" alt="1750188027898.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027909.jpg" class="img-fluid img-clickable" alt="1750188027909.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027920.jpg" class="img-fluid img-clickable" alt="1750188027920.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027931.jpg" class="img-fluid img-clickable" alt="1750188027931.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027942.jpg" class="img-fluid img-clickable" alt="1750188027942.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027953.jpg" class="img-fluid img-clickable" alt="1750188027953.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027967.jpg" class="img-fluid img-clickable" alt="1750188027967.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188027999.jpg" class="img-fluid img-clickable" alt="1750188027999.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028029.jpg" class="img-fluid img-clickable" alt="1750188028029.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028039.jpg" class="img-fluid img-clickable" alt="1750188028039.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028052.jpg" class="img-fluid img-clickable" alt="1750188028052.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028062.jpg" class="img-fluid img-clickable" alt="1750188028062.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028073.jpg" class="img-fluid img-clickable" alt="1750188028073.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028084.jpg" class="img-fluid img-clickable" alt="1750188028084.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028096.jpg" class="img-fluid img-clickable" alt="1750188028096.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028110.jpg" class="img-fluid img-clickable" alt="1750188028110.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028136.jpg" class="img-fluid img-clickable" alt="1750188028136.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028149.jpg" class="img-fluid img-clickable" alt="1750188028149.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028175.jpg" class="img-fluid img-clickable" alt="1750188028175.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028202.jpg" class="img-fluid img-clickable" alt="1750188028202.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028228.jpg" class="img-fluid img-clickable" alt="1750188028228.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028251.jpg" class="img-fluid img-clickable" alt="1750188028251.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028279.jpg" class="img-fluid img-clickable" alt="1750188028279.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028303.jpg" class="img-fluid img-clickable" alt="1750188028303.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028316.jpg" class="img-fluid img-clickable" alt="1750188028316.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028326.jpg" class="img-fluid img-clickable" alt="1750188028326.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028340.jpg" class="img-fluid img-clickable" alt="1750188028340.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028368.jpg" class="img-fluid img-clickable" alt="1750188028368.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028398.jpg" class="img-fluid img-clickable" alt="1750188028398.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028430.jpg" class="img-fluid img-clickable" alt="1750188028430.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028443.jpg" class="img-fluid img-clickable" alt="1750188028443.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028475.jpg" class="img-fluid img-clickable" alt="1750188028475.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028504.jpg" class="img-fluid img-clickable" alt="1750188028504.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028516.jpg" class="img-fluid img-clickable" alt="1750188028516.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028528.jpg" class="img-fluid img-clickable" alt="1750188028528.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028561.jpg" class="img-fluid img-clickable" alt="1750188028561.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028584.jpg" class="img-fluid img-clickable" alt="1750188028584.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028606.jpg" class="img-fluid img-clickable" alt="1750188028606.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028617.jpg" class="img-fluid img-clickable" alt="1750188028617.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028627.jpg" class="img-fluid img-clickable" alt="1750188028627.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028636.jpg" class="img-fluid img-clickable" alt="1750188028636.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028646.jpg" class="img-fluid img-clickable" alt="1750188028646.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028656.jpg" class="img-fluid img-clickable" alt="1750188028656.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028666.jpg" class="img-fluid img-clickable" alt="1750188028666.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028675.jpg" class="img-fluid img-clickable" alt="1750188028675.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028684.jpg" class="img-fluid img-clickable" alt="1750188028684.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028694.jpg" class="img-fluid img-clickable" alt="1750188028694.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028704.jpg" class="img-fluid img-clickable" alt="1750188028704.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028715.jpg" class="img-fluid img-clickable" alt="1750188028715.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028726.jpg" class="img-fluid img-clickable" alt="1750188028726.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028738.jpg" class="img-fluid img-clickable" alt="1750188028738.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028753.jpg" class="img-fluid img-clickable" alt="1750188028753.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028777.jpg" class="img-fluid img-clickable" alt="1750188028777.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028789.jpg" class="img-fluid img-clickable" alt="1750188028789.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028800.jpg" class="img-fluid img-clickable" alt="1750188028800.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028811.jpg" class="img-fluid img-clickable" alt="1750188028811.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028822.jpg" class="img-fluid img-clickable" alt="1750188028822.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028833.jpg" class="img-fluid img-clickable" alt="1750188028833.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028844.jpg" class="img-fluid img-clickable" alt="1750188028844.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028857.jpg" class="img-fluid img-clickable" alt="1750188028857.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028878.jpg" class="img-fluid img-clickable" alt="1750188028878.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028890.jpg" class="img-fluid img-clickable" alt="1750188028890.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028902.jpg" class="img-fluid img-clickable" alt="1750188028902.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028911.jpg" class="img-fluid img-clickable" alt="1750188028911.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028921.jpg" class="img-fluid img-clickable" alt="1750188028921.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028930.jpg" class="img-fluid img-clickable" alt="1750188028930.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028942.jpg" class="img-fluid img-clickable" alt="1750188028942.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188028978.jpg" class="img-fluid img-clickable" alt="1750188028978.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029008.jpg" class="img-fluid img-clickable" alt="1750188029008.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029020.jpg" class="img-fluid img-clickable" alt="1750188029020.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029030.jpg" class="img-fluid img-clickable" alt="1750188029030.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029040.jpg" class="img-fluid img-clickable" alt="1750188029040.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029050.jpg" class="img-fluid img-clickable" alt="1750188029050.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029060.jpg" class="img-fluid img-clickable" alt="1750188029060.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029070.jpg" class="img-fluid img-clickable" alt="1750188029070.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029079.jpg" class="img-fluid img-clickable" alt="1750188029079.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029087.jpg" class="img-fluid img-clickable" alt="1750188029087.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029097.jpg" class="img-fluid img-clickable" alt="1750188029097.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029105.jpg" class="img-fluid img-clickable" alt="1750188029105.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029115.jpg" class="img-fluid img-clickable" alt="1750188029115.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029154.jpg" class="img-fluid img-clickable" alt="1750188029154.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029181.jpg" class="img-fluid img-clickable" alt="1750188029181.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029204.jpg" class="img-fluid img-clickable" alt="1750188029204.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029215.jpg" class="img-fluid img-clickable" alt="1750188029215.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029239.jpg" class="img-fluid img-clickable" alt="1750188029239.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029250.jpg" class="img-fluid img-clickable" alt="1750188029250.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029259.jpg" class="img-fluid img-clickable" alt="1750188029259.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029269.jpg" class="img-fluid img-clickable" alt="1750188029269.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029279.jpg" class="img-fluid img-clickable" alt="1750188029279.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029289.jpg" class="img-fluid img-clickable" alt="1750188029289.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029299.jpg" class="img-fluid img-clickable" alt="1750188029299.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029309.jpg" class="img-fluid img-clickable" alt="1750188029309.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029321.jpg" class="img-fluid img-clickable" alt="1750188029321.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029331.jpg" class="img-fluid img-clickable" alt="1750188029331.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029342.jpg" class="img-fluid img-clickable" alt="1750188029342.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029370.jpg" class="img-fluid img-clickable" alt="1750188029370.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029380.jpg" class="img-fluid img-clickable" alt="1750188029380.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029391.jpg" class="img-fluid img-clickable" alt="1750188029391.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029401.jpg" class="img-fluid img-clickable" alt="1750188029401.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029419.jpg" class="img-fluid img-clickable" alt="1750188029419.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029439.jpg" class="img-fluid img-clickable" alt="1750188029439.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029452.jpg" class="img-fluid img-clickable" alt="1750188029452.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029464.jpg" class="img-fluid img-clickable" alt="1750188029464.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029488.jpg" class="img-fluid img-clickable" alt="1750188029488.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029500.jpg" class="img-fluid img-clickable" alt="1750188029500.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029511.jpg" class="img-fluid img-clickable" alt="1750188029511.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029524.jpg" class="img-fluid img-clickable" alt="1750188029524.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029533.jpg" class="img-fluid img-clickable" alt="1750188029533.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029542.jpg" class="img-fluid img-clickable" alt="1750188029542.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029551.jpg" class="img-fluid img-clickable" alt="1750188029551.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029560.jpg" class="img-fluid img-clickable" alt="1750188029560.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029570.jpg" class="img-fluid img-clickable" alt="1750188029570.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029579.jpg" class="img-fluid img-clickable" alt="1750188029579.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029588.jpg" class="img-fluid img-clickable" alt="1750188029588.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029597.jpg" class="img-fluid img-clickable" alt="1750188029597.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029607.jpg" class="img-fluid img-clickable" alt="1750188029607.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029618.jpg" class="img-fluid img-clickable" alt="1750188029618.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029629.jpg" class="img-fluid img-clickable" alt="1750188029629.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029637.jpg" class="img-fluid img-clickable" alt="1750188029637.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029644.jpg" class="img-fluid img-clickable" alt="1750188029644.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029651.jpg" class="img-fluid img-clickable" alt="1750188029651.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029658.jpg" class="img-fluid img-clickable" alt="1750188029658.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029666.jpg" class="img-fluid img-clickable" alt="1750188029666.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029674.jpg" class="img-fluid img-clickable" alt="1750188029674.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029683.jpg" class="img-fluid img-clickable" alt="1750188029683.jpg">
+      </div>
+
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <img src="./fotos día del libro/1750188029692.jpg" class="img-fluid img-clickable" alt="1750188029692.jpg">
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0 text-center">
+          <img src="" id="modalImage" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .img-clickable {
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .img-clickable:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <script>
+    document.querySelectorAll('.img-clickable').forEach(img => {
+      img.addEventListener('click', () => {
+        const modalImg = document.getElementById('modalImage');
+        modalImg.src = img.src;
+        const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+        modal.show();
+      });
+    });
+  </script>
+  <script>
+    // Hacer que los videos se reproduzcan al hacer clic
+    document.querySelectorAll('.video-clickable').forEach(video => {
+      video.addEventListener('click', () => {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+          video.currentTime = 0;
+        }
+      });
+    });
+  </script>
+  <!-- Footer incluido desde archivo externo -->
+  <div id="footer-container"></div>
+
+  <!-- Modal para mostrar artículos completos -->
+  <div id="article-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/header.js"></script>
+  <script src="/js/carousel.js"></script>
+  <script src="/js/articles.js"></script>
+  <script src="/js/footer.js"></script>
+</body>
+
+</html>
