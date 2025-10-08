@@ -234,7 +234,7 @@ La participación de los estudiantes chapicuenses fue recibida con entusiasmo po
                         <img src="./img/talleres/primera.jfif" alt="Foto 2" class="carousel-img">
                         <img src="./img/talleres/segunda.jfif" alt="Foto 2" class="carousel-img">
                         <img src="./img/talleres/tercera.jfif" alt="Foto 2" class="carousel-img">
-                        <div class="carousel-controls">
+                        <div class="carousel-controls-original">
                             <button onclick="prevSlide(this)">Anterior</button>
                              <button onclick="nextSlide(this)">Siguiente</button>
                         </div>
