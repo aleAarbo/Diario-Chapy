@@ -228,13 +228,13 @@ La participación de los estudiantes chapicuenses fue recibida con entusiasmo po
         7: {
             title: "Liceo Rural de Chapicuy: Talleres",
             content: `
-                    <!-- Carrusel Original -->
-                    <div class="original-carousel">
-                        <img src="./img/talleres/cuarta.jfif" alt="Foto 1" class="carousel-img active">
-                        <img src="./img/talleres/primera.jfif" alt="Foto 2" class="carousel-img">
-                        <img src="./img/talleres/segunda.jfif" alt="Foto 2" class="carousel-img">
-                        <img src="./img/talleres/tercera.jfif" alt="Foto 2" class="carousel-img">
-                        <div class="carousel-controls-original">
+
+                    <div class="simple-carousel">
+                        <iframe src="./img/talleres/cuarta.jfif"></iframe>
+                        <iframe src="./img/talleres/primera.jfif" alt="Foto 2" alt="Juegos Cooperativos" class="carousel-img"></iframe>
+                        <iframe src="./img/talleres/segunda.jfif" alt="Foto 3" class="carousel-img></iframe>
+                        <iframe src="./img/talleres/tercera.jfif" alt="Foto 2" class="carousel-img"></iframe>
+                        <div class="carousel-controls">
                             <button onclick="prevSlide(this)">Anterior</button>
                              <button onclick="nextSlide(this)">Siguiente</button>
                         </div>

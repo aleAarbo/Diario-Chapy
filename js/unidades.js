@@ -275,22 +275,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
         11: {
             title: "Lengua y Química 8°-9°",
-            image: "./unidades/Química y Español - 8vo y 9no/Gamificación en el aula .jpg",
+            image: "./unidades/Química y Español - 8vo y 9no/logo.png",
             content: `
                 <h4>Gamificación y Juegos Cooperativos</h4>
                 <p>Actividades de aprendizaje integrado que combinan lengua española y ciencias a través de la gamificación.</p>
                 
                 <div class="simple-carousel">
-                    <iframe src="./unidades/Química y Español - 8vo y 9no/Gamificación en el aula .jpg" style="height: 500px;"></iframe>
-                    <iframe src="./unidades/Química y Español - 8vo y 9no/Juegos cooperativos.jpg" alt="Juegos Cooperativos" class="carousel-img"></iframe>
-                    <iframe src="./unidades/Química y Español - 8vo y 9no/Juego del paracaídas_.jpg" class="carousel-img></iframe>
+                    <iframe src="./unidades/Química y Español - 8vo y 9no/Gamificación en el aula .jpg" class="carousel-img active" style="height: 500px;"></iframe>
+                    <iframe src="./unidades/Química y Español - 8vo y 9no/Juegos cooperativos.jpg" class="carousel-img"></iframe>
+                    <iframe src="./unidades/Química y Español - 8vo y 9no/Juego del paracaídas_.jpg"></iframe>
                     <iframe src="./unidades/Química y Español - 8vo y 9no/Jugando también aprendemos_.jpg" class="carousel-img"></iframe>
                     <div class="carousel-controls">
                         <button onclick="prevSlide(this)">Anterior</button>
                         <button onclick="nextSlide(this)">Siguiente</button>
                     </div>
                 </div>
-                
                 <p><small>Prof. Macarena Flores y Prof. Ely Di Lachio</small></p>
             `
         }
