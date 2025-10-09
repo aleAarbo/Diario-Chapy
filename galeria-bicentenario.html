@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periódico Digital - Liceo Rural Chapicuy</title>
+    <link rel="stylesheet" href="/css/styles.css">
+     <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header.header-container {
+      position: relative;
+      text-align: center;
+    }
+
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .quote-box {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      max-width: 300px;
+      background-color: rgba(255, 255, 255, 0.75);
+      color: #000;
+      font-style: italic;
+      padding: 1rem;
+      border-radius: 8px;
+      font-family: sans-serif;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Header incluido desde archivo externo -->
+    <div id="header-container"></div>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria-bicentenario.html">Bicentenario en Chapicuy</a></li>
+            <li><a href="galeria.html">Galería Módulo Introductorio</a></li>
+            <li><a href="galeria-dia del libro.html">Galería Día del Libro</a></li>
+            <li><a href="unidadesMI.html">Trabajos Módulo Introductorio</a></li>
+        </ul>
+    </nav>
+
+    <div id="videoModal"
+        style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+        <video id="modalVideo" controls autoplay muted style="max-width:90%; max-height:90%;"></video>
+    </div>
+
+    <script>
+        const videoThumbs = document.querySelectorAll('.video-thumb');
+        const modal = document.getElementById('videoModal');
+        const modalVideo = document.getElementById('modalVideo');
+
+        videoThumbs.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalVideo.src = thumb.src;
+                modalVideo.play();
+            });
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                modalVideo.pause();
+                modalVideo.currentTime = 0;
+                modalVideo.src = '';
+            }
+        });
+    </script>
+    <br>
+    <hr style="border-color:red;">
+
+    <h2 class="text-center mb-3">Bicentenario en el ¡CHAPY!</h2>
+    <h3 class="text-center mb-3">Fotos de las actividades realizadas en el Liceo Rural Chapicuy para conmemorar el bicentenario.</h3>
+    <div class="container mt-4">
+        <div class="row g-3">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 10.52.34 AM.jpeg" class="img-fluid img-clickable" alt="Imagen 1">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 10.52.35 AM.jpeg" class="img-fluid img-clickable" alt="Imagen 2">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 10.52.36 AM.jpeg" class="img-fluid img-clickable" alt="Imagen 3">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.09.39 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 4">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.19 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 5">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.19 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 6">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.20 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 7">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.20 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 8">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.20 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 9">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.49 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 10">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.49 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 11">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.50 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 12">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.50 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 13">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.50 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 14">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.51 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 15">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.51 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 16">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.51 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 17">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.52 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 18">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.52 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 19">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.52 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 20">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.53 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 21">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.53 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 22">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.53 PM (3).jpeg" class="img-fluid img-clickable" alt="Imagen 23">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.53 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 24">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.54 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 25">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.54 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 26">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.54 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 27">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.55 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 28">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.55 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 29">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.55 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 30">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.56 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 31">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.56 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 32">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.56 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 33">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.57 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 34">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.57 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 35">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.57 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 36">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.58 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 37">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.58 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 38">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.58 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 39">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.59 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 40">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.59 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 41">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.00 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 42">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.00 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 43">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.00 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 44">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.01 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 45">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.02 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 46">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.02 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 47">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.03 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 48">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.04 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 49">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.05 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 50">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.05 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 51">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.05 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 52">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.06 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 53">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.06 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 54">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.07 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 55">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.07 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 56">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.07 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 57">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.08 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 58">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.08 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 59">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.09 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 60">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.09 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 61">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.10 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 62">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.12 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 63">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.12 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 64">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.12 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 65">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.13 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 66">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.14 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 67">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.15 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 68">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.16 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 69">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.17 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 70">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.17 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 71">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.18 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 72">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.19 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 73">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.20 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 74">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.21 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 75">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.22 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 76">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.22 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 77">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.23 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 78">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.25 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 79">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.26 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 80">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.48.07 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 81">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.48.44 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 82">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.49.05 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 83">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.06.39 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 84">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.15 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 85">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.16 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 86">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.16 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 87">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.17 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 88">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.17 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 89">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.17 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 90">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.18 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 91">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.18 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 92">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.19 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 93">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.19 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 94">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.20 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 95">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.20 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 96">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.20 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 97">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.21 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 98">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.21 PM (2).jpeg" class="img-fluid img-clickable" alt="Imagen 99">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.21 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 100">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.22 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 101">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.22 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 102">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.23 PM (1).jpeg" class="img-fluid img-clickable" alt="Imagen 103">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.23 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 104">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.09.25 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 105">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.24.30 PM.jpeg" class="img-fluid img-clickable" alt="Imagen 106">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 text-center">
+                    <img src="" id="modalImage" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .img-clickable {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .img-clickable:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <script>
+        document.querySelectorAll('.img-clickable').forEach(img => {
+            img.addEventListener('click', () => {
+                const modalImg = document.getElementById('modalImage');
+                modalImg.src = img.src;
+                const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                modal.show();
+            });
+        });
+    </script>
+    <script>
+        // Hacer que los videos se reproduzcan al hacer clic
+        document.querySelectorAll('.video-clickable').forEach(video => {
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            });
+        });
+    </script>
+    <!-- Footer incluido desde archivo externo -->
+    <div id="footer-container"></div>
+
+    <!-- Modal para mostrar artículos completos -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/header.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/articles.js"></script>
+    <script src="/js/footer.js"></script>
+</body>
+
+</html>
