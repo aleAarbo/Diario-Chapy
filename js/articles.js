@@ -241,6 +241,34 @@ La participación de los estudiantes chapicuenses fue recibida con entusiasmo po
                     </div>
                 </div>`
         },
+
+        //octavo artículo
+
+        8: {
+            title: "¡Chapicuy vibró al ritmo del Bicentenario! Una fiesta educativa que unió historia, arte y comunidad",
+            image: "./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.09.39 PM.jpeg",
+            content: `           
+                    <p>El Liceo Rural Chapicuy "Protector de los Pueblos Libres" se vistió de gala para vivir una celebración del Bicentenario de Uruguay que quedará grabada en la memoria de todos. Bajo una consigna tan creativa como movilizadora, cada nivel educativo recibió la misión de sumergirse en un género musical distintivo. El resultado fue un mosaico de colores, sonidos y emociones que transformó el liceo en un escenario de pura alegría. Desde el candombe que resonó con fuerza ancestral hasta el rock que hizo vibrar los corazones, la jornada se presentaba como una promesa de diversidad y talento juvenil.</p>
+                    <br>
+                    <p>El entusiasmo se palpaba en cada rincón mientras los estudiantes desplegaban todo su ingenio. Fue un derroche de creatividad donde la historia nacional se contó no con discursos, sino con la fuerza de la batucada, la elegancia de la murga y la energía del rap. Ver a los jóvenes abrazar con tanta pasión su género asignado, investigando y dándole su toque personal, fue el testimonio más elocuente de cómo se puede aprender y conmemorar con el alma.</p>
+                    <br>
+                    <p>Más allá de las actuaciones, lo que realmente floreció fue un profundo sentido de comunidad. Familias, docentes y vecinos se dieron cita para compartir un día donde la risa fue la banda sonora y el orgullo por nuestra identidad, el sentimiento unánime. Esta celebración no fue solo un acto; fue una lección viva de que la patria se construye también con estos lazos, con esta alegría compartida y con la educación que sabe pulsar las cuerdas correctas del corazón. ¡Chapicuy, una vez más, demostró que es un verdadero protector del espíritu de los pueblos libres!</p>
+                    <br>
+
+                    <div class="simple-carousel">
+                        <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 10.52.34 AM.jpeg" class="carousel-img active">
+                        <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.20 PM (2).jpeg" class="carousel-img">
+                        <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.49 PM.jpeg" class="carousel-img">
+                        <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 10.52.36 AM.jpeg" class="carousel-img">
+                        <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 10.52.34 AM.jpeg" class="carousel-img">
+                        <div class="carousel-controls">
+                            <button onclick="prevSlide(this)">Anterior</button>
+                            <button onclick="nextSlide(this)">Siguiente</button>
+                        </div>
+                     </div>
+                    <br>
+                    <p>Por Prof. Luis Carbonell</p>`
+        },
     };
 
     function openArticleModal(articleId) {
