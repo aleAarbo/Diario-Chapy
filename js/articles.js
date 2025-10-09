@@ -257,7 +257,7 @@ La participación de los estudiantes chapicuenses fue recibida con entusiasmo po
 
                     <div class="simple-carousel">
                         <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 10.52.34 AM.jpeg" class="carousel-img active">
-                        <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 2.08.23 PM.jpeg" class="carousel-img">
+                        <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.48.07 PM.jpeg" class="carousel-img">
                         <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.54 PM (2).jpeg" class="carousel-img">
                         <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.38.58 PM.jpeg" class="carousel-img">
                         <img src="./img/BI-Chapicuy/WhatsApp Image 2025-08-29 at 12.39.07 PM.jpeg" class="carousel-img">
