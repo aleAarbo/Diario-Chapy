@@ -1,21 +1,14 @@
-<!-- unidades.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todas las Unidades Curriculares - Liceo Chapicuy</title>
-    <link rel="stylesheet" href="./css/estilosUnidades.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Periódico Digital - Liceo Rural Chapicuy</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header-container2">
-        <img src="./img/logo.png" alt="Logo Liceo Chapicuy">
-        <div class="quote-box">
-            “Cuando creíamos que teníamos todas las respuestas, de pronto, cambiaron todas las preguntas.” — Mario Benedetti
-        </div>
-    </header>
+    <!-- Header incluido desde archivo externo -->
+    <div id="header-container"></div>
 
     <!-- Barra de navegación -->
     <nav>
@@ -23,17 +16,12 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="galeria.html">Galería Módulo Introductorio</a></li>
             <li><a href="galeria-dia del libro.html">Galería Día del Libro</a></li>
-            <li><a href="unidades.html">Trabajos Módulo Introductorio</a></li>
+            <li><a href="unidadesMI.html">Trabajos Módulo Introductorio</a></li>
         </ul>
     </nav>
 
-    <!-- Sección Principal -->
-    <div class="container my-5">
-        <h1 class="text-center mb-4">Todas las Unidades Curriculares</h1>
-        <p class="text-center lead">Explora los trabajos realizados en todas las unidades curriculares del Liceo Rural Chapicuy</p>
-    </div>
-
-    <!-- Grid de Artículos -->
+    
+    <!-- Sección de artículos dinámicos -->
     <section class="articles-section">
         <!-- Artículo 1: Inglés 9° EBI -->
         <article class="dynamic-article" data-id="1">
@@ -168,7 +156,10 @@
         </article>
     </section>
 
-    <!-- Modal -->
+    <!-- Footer incluido desde archivo externo -->
+    <div id="footer-container"></div>
+
+    <!-- Modal para mostrar artículos completos -->
     <div id="article-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -176,8 +167,10 @@
         </div>
     </div>
 
-    <script src="unidades.js"></script>
-    <script src="./js/footer.js"></script>
-    <script src="js/header.js"></script>
+    <!-- Scripts -->
+    <script src="/js/header.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/unidades.js"></script>
+    <script src="/js/footer.js"></script>
 </body>
 </html>
