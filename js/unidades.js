@@ -226,30 +226,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h4>Trabajos Creativos de Estudiantes</h4>
                 <p>Exploración de diferentes géneros y estilos literarios a través de creaciones originales.</p>
                 
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <h5>Matías Rochón - Primero EMS</h5>
-                        <div class="ratio ratio-16x9">
-                            <iframe src="./unidades/literatura/Titán Gio - Matías Rochón.pdf" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <h5>Grupo Noveno EBI</h5>
-                        <div class="ratio ratio-16x9">
-                            <iframe src="./unidades/literatura/Tercero_Nada es lo.pdf" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <h5>Grupo Primero EMS</h5>
-                        <div class="ratio ratio-16x9">
-                            <iframe src="./unidades/literatura/Cuarto_Un amor.pdf" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <h5>Literatura 2025</h5>
-                        <div class="ratio ratio-16x9">
-                            <iframe src="./unidades/literatura/Passepartout - Viernes Roquero.pdf" allowfullscreen></iframe>
-                        </div>
+                <div class="simple-carousel">
+                    <iframe src="./unidades/literatura/Titán Gio - Matías Rochón.pdf" class="carousel-img active" style="height: 500px;"></iframe>
+                    <iframe src="./unidades/literatura/Tercero_Nada es lo.pdf" class="carousel-img"></iframe>
+                    <iframe src="./unidades/literatura/Cuarto_Un amor.pdf" class="carousel-img"></iframe>
+                    <iframe src="./unidades/literatura/Passepartout - Viernes Roquero.pdf" class="carousel-img"></iframe>
+                    <div class="carousel-controls">
+                        <button onclick="prevSlide(this)">Anterior</button>
+                        <button onclick="nextSlide(this)">Siguiente</button>
                     </div>
                 </div>
                 
