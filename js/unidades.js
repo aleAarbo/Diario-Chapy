@@ -83,25 +83,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
         4: {
             title: "Filosofía - Educación Media Superior",
-            image: "./img/logo.png",
+            image: "./unidades/filosofia/logo.jfif",
             content: `
                 <h4>Trabajos Filosóficos - Análisis y Reflexión</h4>
                 <p>Exploración de conceptos filosóficos fundamentales a través del análisis de textos y películas.</p>
                 
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="./unidades/filosofia/Los ciegos y el elefante - Filosofía 2do EMS.pdf" allowfullscreen></iframe>
-                        </div>
-                        <p class="text-center mt-1"><small>2do EMS - Prof. Robaudo Falcon</small></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="ratio ratio-16x9">
-                            <iframe src="./unidades/filosofia/Reseña de película, 3ro G Filosofía.pdf" allowfullscreen></iframe>
-                        </div>
-                        <p class="text-center mt-1"><small>3ro EMS - Prof. Robaudo Falcon</small></p>
+                <div class="simple-carousel">
+                    <iframe src="./unidades/filosofia/Los ciegos y el elefante - Filosofía 2do EMS.pdf" class="carousel-img active" style="height: 500px;"></iframe>
+                    <iframe src="./unidades/filosofia/Reseña de película, 3ro G Filosofía.pdf" class="carousel-img"></iframe>
+                    <div class="carousel-controls">
+                        <button onclick="prevSlide(this)">Anterior</button>
+                        <button onclick="nextSlide(this)">Siguiente</button>
                     </div>
                 </div>
+
+                <p class="text-center mt-1"><small>3ro EMS - Prof. Robaudo Falcon</small></p>
             `
         },
 
