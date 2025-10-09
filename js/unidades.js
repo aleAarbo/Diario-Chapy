@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const articlesData = {
         1: {
             title: "Inglés 9° EBI - Language in Context",
-            image: "./Inglés - Braulio Paz/9°/Material 1.png",
+            image: ".unidades/Inglés - Braulio Paz/9°/Material 1.png",
             content: `
                 <h4>Language in context! by 9th grade students</h4>
                 <p>La nueva información cobra aún más sentido y significado cuando podemos, finalmente, observarla en contexto. Esto se intensifica aún más cuando podemos utilizarla en contexto.</p>
-                <p>Durante el módulo introductorio, los estudiantes de 9° aprendieron -y recordaron de años anteriores- frases de cortesía y frases útiles para el día a día. Dichas frases fueron aplicadas en diferentes diálogos. Estos diálogos fueron original y gráficamente creados por estudiantes utilizando la plataforma Canva.</p>
+                <p>Durante el módulo introductorio, los estudiantes de 9° aprendieron (y recordaron de años anteriores) frases de cortesía y frases útiles para el día a día. Dichas frases fueron aplicadas en diferentes diálogos.</p>
                 
                 <div class="simple-carousel">
-                    <img src="./Inglés - Braulio Paz/9°/Material 1.png" alt="Material 1" class="carousel-img active">
-                    <img src="./Inglés - Braulio Paz/9°/Material 2.png" alt="Material 2" class="carousel-img">
-                    <img src="./Inglés - Braulio Paz/9°/Material 3.png" alt="Material 3" class="carousel-img">
-                    <img src="./Inglés - Braulio Paz/9°/Material 4.png" alt="Material 4" class="carousel-img">
+                    <img src="./unidades/Inglés - Braulio Paz/9°/Material 1.png" alt="Material 1" class="carousel-img active">
+                    <img src="./unidades/Inglés - Braulio Paz/9°/Material 2.png" alt="Material 2" class="carousel-img">
+                    <img src="./unidades/Inglés - Braulio Paz/9°/Material 3.png" alt="Material 3" class="carousel-img">
+                    <img src="./unidades/Inglés - Braulio Paz/9°/Material 4.png" alt="Material 4" class="carousel-img">
                     <div class="carousel-controls">
                         <button onclick="prevSlide(this)">Anterior</button>
                         <button onclick="nextSlide(this)">Siguiente</button>
@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>A partir de este enfoque, los estudiantes reflexionaron sobre cómo la independencia no implica trabajar en soledad, sino asumir un rol activo y consciente dentro del grupo. Así, el laboratorio de ciencias se convirtió en el escenario ideal para poner en práctica estos conceptos: organizar tareas, tomar decisiones compartidas, comunicar ideas con claridad y, sobre todo, respetar los protocolos que garantizan un entorno de trabajo seguro y eficaz.</p>
                 
                 <div class="simple-carousel">
-                    <iframe src="./química/Infografías sobre trabajo en el laboratorio/2+EMS.pdf" class="carousel-img active" style="height: 500px;"></iframe>
-                    <img src="./química/Infografías sobre trabajo en el laboratorio/Fondos+para+Whatsapp+Minimalista+Beige.png" alt="Infografía 2" class="carousel-img">
-                    <iframe src="./química/Infografías sobre trabajo en el laboratorio/Infografía+Proyecto+de+Química+moderno+negro+beige_20250326_173958_0000.pdf" class="carousel-img" style="height: 500px;"></iframe>
-                    <img src="./química/Infografías sobre trabajo en el laboratorio/Screenshot_20250327_204313.jpg" alt="Infografía 4" class="carousel-img">
+                    <iframe src="./unidades/química/Infografías sobre trabajo en el laboratorio/2+EMS.pdf" class="carousel-img active" style="height: 500px;"></iframe>
+                    <iframe src="./unidades/química/Infografías sobre trabajo en el laboratorio/Fondos+para+Whatsapp+Minimalista+Beige.png" alt="Infografía 2" class="carousel-img"></iframe>
+                    <iframe src="./unidades/química/Infografías sobre trabajo en el laboratorio/Infografía+Proyecto+de+Química+moderno+negro+beige_20250326_173958_0000.pdf" class="carousel-img" style="height: 500px;"></iframe>
+                    <iframe src="./unidades/química/Infografías sobre trabajo en el laboratorio/Screenshot_20250327_204313.jpg" alt="Infografía 4" class="carousel-img"></iframe>
                     <div class="carousel-controls">
                         <button onclick="prevSlide(this)">Anterior</button>
                         <button onclick="nextSlide(this)">Siguiente</button>
