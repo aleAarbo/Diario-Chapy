@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>Actividades de aprendizaje integrado que combinan lengua española y ciencias a través de la gamificación.</p>
                 
                 <div class="simple-carousel">
-                    <iframe src="./unidades/Química y Español - 8vo y 9no/Gamificación en el aula .jpg" class="carousel-img active" style="height: 500px;"></iframe>
+                    <iframe src="./unidades/Química y Español - 8vo y 9no/Gamificación en el aula .jpg" class="carousel-img active"></iframe>
                     <iframe src="./unidades/Química y Español - 8vo y 9no/Juegos cooperativos.jpg" class="carousel-img"></iframe>
                     <iframe src="./unidades/Química y Español - 8vo y 9no/Juego del paracaídas_.jpg"></iframe>
                     <iframe src="./unidades/Química y Español - 8vo y 9no/Jugando también aprendemos_.jpg" class="carousel-img"></iframe>
