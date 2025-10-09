@@ -13,12 +13,12 @@ body {
 }
 
 /* Header */
-.header-container {
+.header-container2 {
     position: relative;
     text-align: center;
 }
 
-.header-container img {
+.header-container2 img {
     width: 100%;
     height: auto;
     display: block;
