@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         5: {
             title: "Matemática - Varios Niveles",
-            image: "./img/logo.png",
+            image: "./unidades/matemática logo.jfif",
             content: `
                 <h4>Recursos y Presentaciones Interactivas</h4>
                 <p>Material educativo interactivo para diferentes niveles de enseñanza matemática.</p>
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://view.genially.com/67d9a989998fbb084bd8d637" allowfullscreen></iframe>
+                            <iframe src="https://view.genially.com/67e2b8cbe4e040afcc272430/interactive-content-2degreeems-modulo-de-inicio-chapicuy" allowfullscreen></iframe>
                         </div>
                         <p class="text-center mt-1"><small>Prof. Maria Imer</small></p>
                     </div>
@@ -142,18 +142,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         6: {
             title: "Taller de Cocina",
-            image: "./Taller de cocina/20250425_142426.jpg",
+            image: "./unidades/Taller de cocina/20250425_142426.jpg",
             content: `
                 <h4>Actividades Prácticas del Taller</h4>
                 <p>Galería de actividades prácticas realizadas en el taller de cocina.</p>
                 
                 <div class="simple-carousel">
-                    <img src="./Taller de cocina/20250425_142426.jpg" alt="Cocina 1" class="carousel-img active">
-                    <img src="./Taller de cocina/20250425_142433.jpg" alt="Cocina 2" class="carousel-img">
-                    <img src="./Taller de cocina/20250425_151002.jpg" alt="Cocina 3" class="carousel-img">
-                    <img src="./Taller de cocina/20250425_151008.jpg" alt="Cocina 4" class="carousel-img">
+                    <img src="./unidades/Taller de cocina/20250425_142426.jpg" alt="Cocina 1" class="carousel-img active">
+                    <img src="./unidades/Taller de cocina/20250425_142433.jpg" alt="Cocina 2" class="carousel-img">
+                    <img src="./unidades/Taller de cocina/20250425_151002.jpg" alt="Cocina 3" class="carousel-img">
+                    <img src="./unidades/Taller de cocina/20250425_151008.jpg" alt="Cocina 4" class="carousel-img">
                     <video class="carousel-img" controls>
-                        <source src="./Taller de cocina/20250425_140831.mp4" type="video/mp4">
+                        <source src="./unidades/Taller de cocina/20250425_140831.mp4" type="video/mp4">
                     </video>
                     <div class="carousel-controls">
                         <button onclick="prevSlide(this)">Anterior</button>
@@ -167,16 +167,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         7: {
             title: "Biología - Todos los Niveles",
-            image: "./biología/1° EMS/Facundo y Benjamin.png",
+            image: "./unidades/biología/1° EMS/Facundo y Benjamin.png",
             content: `
                 <h4>Proyectos de Biología - Infografías y Presentaciones</h4>
                 <p>Trabajos realizados por estudiantes de diferentes niveles en la unidad curricular de Biología.</p>
                 
                 <h5>8° y 9° EBI</h5>
                 <div class="simple-carousel">
-                    <iframe src="./biología/Presentación educativa el arte del collage estilo collage fotográfico en beige y marrón.pdf" class="carousel-img active" style="height: 500px;"></iframe>
+                    <iframe src="./unidades/biología/Presentación educativa el arte del collage estilo collage fotográfico en beige y marrón.pdf" class="carousel-img active" style="height: 500px;"></iframe>
                     <video class="carousel-img" controls>
-                        <source src="./biología/9° Bullyng.mp4" type="video/mp4">
+                        <source src="./unidades/biología/9° Bullyng.mp4" type="video/mp4">
                     </video>
                     <div class="carousel-controls">
                         <button onclick="prevSlide(this)">Anterior</button>
@@ -186,12 +186,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 <h5 class="mt-4">1° EMS</h5>
                 <div class="simple-carousel">
-                    <iframe src="./biología/1° EMS/Agregar un título.pdf" class="carousel-img active" style="height: 500px;"></iframe>
-                    <img src="./biología/1° EMS/Facundo y Benjamin.png" alt="Bio 1EMS 1" class="carousel-img">
-                    <iframe src="./biología/1° EMS/Infografía Biología molecular Ciencia Información Sencilla Gris y Verde.pdf" class="carousel-img" style="height: 500px;"></iframe>
-                    <img src="./biología/1° EMS/Matias, David, Lucas.png" alt="Bio 1EMS 2" class="carousel-img">
-                    <iframe src="./biología/1° EMS/Rosina y Valentina.pdf" class="carousel-img" style="height: 500px;"></iframe>
-                    <img src="./biología/1° EMS/Santino y Lautaro.png" alt="Bio 1EMS 3" class="carousel-img">
+                    <iframe src="./unidades/biología/1° EMS/Agregar un título.pdf" class="carousel-img active" style="height: 500px;"></iframe>
+                    <img src="./unidades/biología/1° EMS/Facundo y Benjamin.png" alt="Bio 1EMS 1" class="carousel-img">
+                    <iframe src="./unidades/biología/1° EMS/Infografía Biología molecular Ciencia Información Sencilla Gris y Verde.pdf" class="carousel-img" style="height: 500px;"></iframe>
+                    <img src="./unidades/biología/1° EMS/Matias, David, Lucas.png" alt="Bio 1EMS 2" class="carousel-img">
+                    <iframe src="./unidades/biología/1° EMS/Rosina y Valentina.pdf" class="carousel-img" style="height: 500px;"></iframe>
+                    <img src="./unidades/biología/1° EMS/Santino y Lautaro.png" alt="Bio 1EMS 3" class="carousel-img">
                     <div class="carousel-controls">
                         <button onclick="prevSlide(this)">Anterior</button>
                         <button onclick="nextSlide(this)">Siguiente</button>
@@ -201,14 +201,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h5 class="mt-4">2° EMS</h5>
                 <div class="simple-carousel">
                     <video class="carousel-img active" controls>
-                        <source src="./biología/2° EMS/AT WORK.mp4" type="video/mp4">
+                        <source src="./unidades/biología/2° EMS/AT WORK.mp4" type="video/mp4">
                     </video>
-                    <iframe src="./biología/2° EMS/Kevin Rodríguez.pdf" class="carousel-img" style="height: 500px;"></iframe>
-                    <img src="./biología/2° EMS/maira.jpeg" alt="Bio 2EMS 1" class="carousel-img">
-                    <img src="./biología/2° EMS/nelly.jpeg" alt="Bio 2EMS 2" class="carousel-img">
-                    <iframe src="./biología/2° EMS/Pia.pdf" class="carousel-img" style="height: 500px;"></iframe>
-                    <iframe src="./biología/2° EMS/Visual y Biologia (Guada Antuj) .pdf" class="carousel-img" style="height: 500px;"></iframe>
-                    <img src="./biología/2° EMS/WhatsApp Image 2025-04-08 at 08.53.48.jpeg" alt="Bio 2EMS 3" class="carousel-img">
+                    <iframe src="./unidades/biología/2° EMS/Kevin Rodríguez.pdf" class="carousel-img" style="height: 500px;"></iframe>
+                    <img src="./unidades/biología/2° EMS/maira.jpeg" alt="Bio 2EMS 1" class="carousel-img">
+                    <img src="./unidades/biología/2° EMS/nelly.jpeg" alt="Bio 2EMS 2" class="carousel-img">
+                    <iframe src="./unidades/biología/2° EMS/Pia.pdf" class="carousel-img" style="height: 500px;"></iframe>
+                    <iframe src="./unidades/biología/2° EMS/Visual y Biologia (Guada Antuj) .pdf" class="carousel-img" style="height: 500px;"></iframe>
+                    <img src="./unidades/biología/2° EMS/WhatsApp Image 2025-04-08 at 08.53.48.jpeg" alt="Bio 2EMS 3" class="carousel-img">
                     <div class="carousel-controls">
                         <button onclick="prevSlide(this)">Anterior</button>
                         <button onclick="nextSlide(this)">Siguiente</button>
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         8: {
             title: "Literatura - Creaciones Literarias",
-            image: "./img/logo.png",
+            image: "./unidades/literatura/logo.jfif",
             content: `
                 <h4>Trabajos Creativos de Estudiantes</h4>
                 <p>Exploración de diferentes géneros y estilos literarios a través de creaciones originales.</p>
@@ -230,25 +230,25 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="col-md-6 mb-3">
                         <h5>Matías Rochón - Primero EMS</h5>
                         <div class="ratio ratio-16x9">
-                            <iframe src="./literatura/Titán Gio - Matías Rochón.pdf" allowfullscreen></iframe>
+                            <iframe src="./unidades/literatura/Titán Gio - Matías Rochón.pdf" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <h5>Grupo Noveno EBI</h5>
                         <div class="ratio ratio-16x9">
-                            <iframe src="./literatura/Tercero_Nada es lo.pdf" allowfullscreen></iframe>
+                            <iframe src="./unidades/literatura/Tercero_Nada es lo.pdf" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <h5>Grupo Primero EMS</h5>
                         <div class="ratio ratio-16x9">
-                            <iframe src="./literatura/Cuarto_Un amor.pdf" allowfullscreen></iframe>
+                            <iframe src="./unidades/literatura/Cuarto_Un amor.pdf" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <h5>Literatura 2025</h5>
                         <div class="ratio ratio-16x9">
-                            <iframe src="./literatura/Passepartout - Viernes Roquero.pdf" allowfullscreen></iframe>
+                            <iframe src="./unidades/literatura/Passepartout - Viernes Roquero.pdf" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
