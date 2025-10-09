@@ -243,13 +243,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         9: {
             title: "Taller Arte Educación Musical",
-            image: "./Arte Educación Musical/Captura de pantalla.png",
+            image: "./unidades/Arte Educación Musical/logo.png",
             content: `
                 <h4>Proyecto Integrado de Arte y Música</h4>
                 <p>Proyectos creativos que integran arte visual y educación musical para estudiantes de 7° y 8° grado.</p>
                 
                 <div class="text-center">
-                    <img src="./Arte Educación Musical/Captura de pantalla.png" alt="Arte Musical" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="./unidades/Arte Educación Musical/Captura de pantalla.png" alt="Arte Musical" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                 </div>
                 
                 <p><small>Prof. Ingrid Waller</small></p>
@@ -258,14 +258,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         10: {
             title: "Geografía 7° EBI",
-            image: "./img/logo.png",
+            image: "./unidades/geografía/logo.jpg",
             content: `
                 <h4>Video Educativo sobre Conceptos Geográficos</h4>
                 <p>Video creado por estudiantes de 7° grado explorando conceptos fundamentales de geografía.</p>
                 
                 <div class="ratio ratio-16x9">
                     <video controls style="width: 100%; border-radius: 8px;">
-                        <source src="./geografía/WhatsApp Video 2025-04-20 at 8.36.26 PM.mp4" type="video/mp4">
+                        <source src="./unidades/geografía/WhatsApp Video 2025-04-20 at 8.36.26 PM.mp4" type="video/mp4">
                     </video>
                 </div>
                 
@@ -275,16 +275,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         11: {
             title: "Lengua y Química 8°-9°",
-            image: "./Química y Español - 8vo y 9no/Gamificación en el aula .jpg",
+            image: "./unidades/Química y Español - 8vo y 9no/Gamificación en el aula .jpg",
             content: `
                 <h4>Gamificación y Juegos Cooperativos</h4>
                 <p>Actividades de aprendizaje integrado que combinan lengua española y ciencias a través de la gamificación.</p>
                 
                 <div class="simple-carousel">
-                    <img src="./Química y Español - 8vo y 9no/Gamificación en el aula .jpg" alt="Gamificación" class="carousel-img active">
-                    <img src="./Química y Español - 8vo y 9no/Juegos cooperativos.jpg" alt="Juegos Cooperativos" class="carousel-img">
-                    <img src="./Química y Español - 8vo y 9no/Juego del paracaídas_.jpg" alt="Juego Paracaídas" class="carousel-img">
-                    <img src="./Química y Español - 8vo y 9no/Jugando también aprendemos_.jpg" alt="Aprendiendo Jugando" class="carousel-img">
+                    <iframe src="./unidades/Química y Español - 8vo y 9no/Gamificación en el aula .jpg" style="height: 500px;"></iframe>
+                    <iframe src="./unidades/Química y Español - 8vo y 9no/Juegos cooperativos.jpg" alt="Juegos Cooperativos" class="carousel-img"></iframe>
+                    <iframe src="./unidades/Química y Español - 8vo y 9no/Juego del paracaídas_.jpg" class="carousel-img></iframe>
+                    <iframe src="./unidades/Química y Español - 8vo y 9no/Jugando también aprendemos_.jpg" class="carousel-img"></iframe>
                     <div class="carousel-controls">
                         <button onclick="prevSlide(this)">Anterior</button>
                         <button onclick="nextSlide(this)">Siguiente</button>
