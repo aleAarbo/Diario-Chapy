@@ -62,15 +62,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p><strong>Actividad:</strong> A partir de la visualización del personaje y su estudio a través de la novela donde reconocen rasgos físicos y emocionales los alumnos realizarán ilustraciones donde se expresen dichas características. Se realizará un estudio de la anatomía humana sobre todo la realización de rostros además de agregar aspectos visuales que potencian el significado.</p>
                 
                 <div class="simple-carousel">
-                    <img src="./Arte y comunicación visual/1ems/20250424_115914.jpg" alt="Ilustración 1" class="carousel-img active">
-                    <img src="./Arte y comunicación visual/1ems/20250424_115921.jpg" alt="Ilustración 2" class="carousel-img">
-                    <img src="./Arte y comunicación visual/1ems/20250424_115929.jpg" alt="Ilustración 3" class="carousel-img">
-                    <img src="./Arte y comunicación visual/1ems/20250424_115936.jpg" alt="Ilustración 4" class="carousel-img">
-                    <img src="./Arte y comunicación visual/1ems/20250424_115942.jpg" alt="Ilustración 5" class="carousel-img">
-                    <img src="./Arte y comunicación visual/1ems/20250424_115948.jpg" alt="Ilustración 6" class="carousel-img">
-                    <img src="./Arte y comunicación visual/1ems/20250424_115955.jpg" alt="Ilustración 7" class="carousel-img">
-                    <img src="./Arte y comunicación visual/1ems/20250424_120000.jpg" alt="Ilustración 8" class="carousel-img">
-                    <img src="./Arte y comunicación visual/1ems/20250424_120006.jpg" alt="Ilustración 9" class="carousel-img">
+                    <img src="./unidades/Arte y comunicación visual/1ems/20250424_115914.jpg" alt="Ilustración 1" class="carousel-img active">
+                    <img src="./unidades/Arte y comunicación visual/1ems/20250424_115921.jpg" alt="Ilustración 2" class="carousel-img">
+                    <img src="./unidades/Arte y comunicación visual/1ems/20250424_115929.jpg" alt="Ilustración 3" class="carousel-img">
+                    <img src="./unidades/Arte y comunicación visual/1ems/20250424_115936.jpg" alt="Ilustración 4" class="carousel-img">
+                    <img src="./unidades/Arte y comunicación visual/1ems/20250424_115942.jpg" alt="Ilustración 5" class="carousel-img">
+                    <img src="./unidades/Arte y comunicación visual/1ems/20250424_115948.jpg" alt="Ilustración 6" class="carousel-img">
+                    <img src="./unidades/Arte y comunicación visual/1ems/20250424_115955.jpg" alt="Ilustración 7" class="carousel-img">
+                    <img src="./unidades/Arte y comunicación visual/1ems/20250424_120000.jpg" alt="Ilustración 8" class="carousel-img">
+                    <img src="./unidades/Arte y comunicación visual/1ems/20250424_120006.jpg" alt="Ilustración 9" class="carousel-img">
                     <div class="carousel-controls">
                         <button onclick="prevSlide(this)">Anterior</button>
                         <button onclick="nextSlide(this)">Siguiente</button>
@@ -91,13 +91,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <div class="ratio ratio-16x9">
-                            <iframe src="./filosofia/Los ciegos y el elefante - Filosofía 2do EMS.pdf" allowfullscreen></iframe>
+                            <iframe src="./unidades/filosofia/Los ciegos y el elefante - Filosofía 2do EMS.pdf" allowfullscreen></iframe>
                         </div>
                         <p class="text-center mt-1"><small>2do EMS - Prof. Robaudo Falcon</small></p>
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="ratio ratio-16x9">
-                            <iframe src="./filosofia/Reseña de película, 3ro G Filosofía.pdf" allowfullscreen></iframe>
+                            <iframe src="./unidades/filosofia/Reseña de película, 3ro G Filosofía.pdf" allowfullscreen></iframe>
                         </div>
                         <p class="text-center mt-1"><small>3ro EMS - Prof. Robaudo Falcon</small></p>
                     </div>
